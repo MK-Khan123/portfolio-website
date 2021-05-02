@@ -1,37 +1,71 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import './ProjectSection.css';
 
 const projects = [
     {
-        projectImg: 'https://ibb.co/pKvyM67',
+        projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
         projectTitle: 'City Transport',
         projectDescription: 'A website for booking different transport services across the city',
-        technology: ['React.js', 'React Router', 'Firebase', 'BootStrap 5.0']
+        codeLink: 'https://github.com/MK-Khan123/city-transport',
+        liveSite: 'https://practical-joliot-41cf3a.netlify.app/'
     },
     {
-        projectImg: 'https://ibb.co/ZSm5hL5',
+        projectImg: 'https://i.ibb.co/XD81z21/fullstack1.png',
         projectTitle: 'Grocery House',
         projectDescription: 'A grocery shop website where users can purchase daily essentials',
-        technology: ['React.js', 'React Router', 'Node.js', 'Express.js', 'MongoDB', 'BootStrap 5.0']
+        codeLink: 'https://github.com/MK-Khan123/fullstack-assignment-client',
+        liveSite: 'https://fullstack-assignment.firebaseapp.com/'
     },
     {
-        projectImg: 'https://ibb.co/0Y0MnT5',
+        projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
         projectTitle: 'City Wheels Auto Shop',
         projectDescription: 'An automotive service oriented website where people can opt for services online',
-        technology: ['React.js', 'React Router', 'Node.js', 'Express.js', 'MongoDB', 'Stripe.js', 'BootStrap 5.0']
+        codeLink: 'https://github.com/MK-Khan123/complete-website-client',
+        liveSite: 'https://complete-website-assignm-474e8.firebaseapp.com/'
     }
 ];
 
 const ProjectSection = () => {
     return (
-        <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.2)' }}>
+        <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.1)' }}>
             <h2 className='text-center p-5' >My Projects</h2>
-            <div className="card" style="width: 18rem;">
-                <img src="..." className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <Link to="#" className="btn btn-primary">Go somewhere</Link>
+            <div className='d-flex justify-content-center'>
+                <div className='row'>
+                    {
+                        projects.map(project => {
+                            const { projectImg, projectTitle, projectDescription, codeLink, liveSite } = project;
+                            return (
+                                <div className="card m-3 project-card text-white projectCardStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                                    <img src={projectImg} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{projectTitle}</h5>
+                                        <p className="card-text">{projectDescription}</p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <ul className='list-inline'>
+                                            <li className='list-inline-item'>
+                                                <div>
+                                                    <a href={codeLink} target="_blank" rel="noopener noreferrer">
+                                                        <button className='btn btn-sm btn-outline-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li className='list-inline-item'>
+                                                <div>
+                                                    <a href={liveSite} target="_blank" rel="noopener noreferrer">
+                                                        <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </div>

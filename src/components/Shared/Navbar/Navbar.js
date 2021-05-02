@@ -16,7 +16,7 @@ const Navbar = () => {
                         <Link className="nav-link ms-4" to="/projects">Projects</Link>
                         <Link className="nav-link ms-4" to="/blogs">Blogs</Link>
                         <Link className="nav-link ms-4" to="/contact">Contact</Link>
-                        <Link className="nav-link ms-4 btn btn-outline-danger" to="#">DOWNLOAD RESUME</Link>
+                        <a className="ms-4 btn btn-outline-danger" target='_blank' rel="noopener noreferrer" href="https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf">DOWNLOAD RESUME</a>
                     </div>
                 </div>
             </div>

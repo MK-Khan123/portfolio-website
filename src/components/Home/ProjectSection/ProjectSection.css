@@ -1,0 +1,14 @@
+.projectCardStyle img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-card {
+    transition: 0.2s linear;
+    border-radius: 5px; 
+}
+.project-card:hover {
+    -webkit-box-shadow: -1px 0px 28px 3px rgba(0,0,0,0.32);
+    box-shadow: -1px 0px 28px 3px rgba(0,0,0,0.32);
+    transform: scale(1.1);
+}
