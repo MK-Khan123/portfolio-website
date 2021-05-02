@@ -8,6 +8,8 @@ import blogPic2 from '../../images/front-end-developer.jpg';
 import blogPic3 from '../../images/developer.png';
 
 const Blogs = () => {
+    document.title = 'Blogs';
+
     return (
         <div>
             <Navbar />

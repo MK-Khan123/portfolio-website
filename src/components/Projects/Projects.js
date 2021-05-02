@@ -5,6 +5,8 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../Shared/Navbar/Navbar';
 
 const Projects = () => {
+    document.title = 'Projects';
+
     return (
         <div>
             <Navbar />

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: "#171717" }}>
+        <div style={{ backgroundColor: "#383838" }}>
             <div className='p-5 ms-3 text-center text-white'>
                 <h2>Get in Touch</h2>
                 <p>I'd Love to hear from you. For any queries, work samples or if you just want to say hi, fell free to drop a message. I'll try my best to get back to you!</p>

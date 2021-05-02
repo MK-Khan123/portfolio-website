@@ -3,7 +3,7 @@ import './HeaderMain.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import background from '../../../images/background.png';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
 const backgroundPicture = {
     backgroundImage: `url(${background})`,
@@ -40,7 +40,7 @@ const HeaderMain = () => {
                     </a>
                 </div>
                 <div className='pt-3'>
-                    <a target='_blank' className='btn btn-danger' rel="noopener noreferrer" href='https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf'>Download Resume</a>
+                    <a target='_blank' className='btn btn-danger' rel="noopener noreferrer" href='https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf'><FontAwesomeIcon icon={faFile} /> Download Resume</a>
                 </div>
             </div>
         </div>

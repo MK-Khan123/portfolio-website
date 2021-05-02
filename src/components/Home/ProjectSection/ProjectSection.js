@@ -34,14 +34,14 @@ const projects = [
 const ProjectSection = () => {
     return (
         <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.1)' }}>
-            <h2 className='text-center p-5' >My Projects</h2>
+            <h2 className='text-center p-5'>My Projects</h2>
             <div className='d-flex justify-content-center'>
                 <div className='row'>
                     {
                         projects.map(project => {
                             const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
                             return (
-                                <div key={id} className="card m-3 project-card text-white projectCardStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                                <div key={id} className="card m-3 project-card text-white projectCardStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
                                     <img src={projectImg} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{projectTitle}</h5>

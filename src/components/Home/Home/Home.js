@@ -6,6 +6,8 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 import ProjectSection from '../ProjectSection/ProjectSection';
 
 const Home = () => {
+    document.title = 'Home';
+
     return (
         <div>
             <Header />

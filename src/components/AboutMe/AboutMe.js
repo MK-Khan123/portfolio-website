@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import myPic from '../../images/myPic.png';
 import Navbar from '../Shared/Navbar/Navbar';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = () => {
+    document.title = 'About';
+
     return (
         <div>
             <Navbar />
@@ -34,7 +36,7 @@ const AboutMe = () => {
                     </a>
                 </div>
                 <div className='pt-3'>
-                    <a target='_blank' className='btn btn-danger' rel="noopener noreferrer" href='https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf'>Download Resume</a>
+                    <a target='_blank' className='btn btn-danger' rel="noopener noreferrer" href='https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf'><FontAwesomeIcon icon={faFile} /> Download Resume</a>
                 </div>
             </div>
             <div className='row pt-5 text-white' style={{ backgroundColor: 'rgba(0, 0, 0, 0.90)' }}>

@@ -14,7 +14,7 @@ const BlogSection = () => {
                 <div className='row'>
 
                     {/* 1st Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
                         <img src={blogPic1} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">All you need to know about JavaScript</h5>
@@ -30,7 +30,7 @@ const BlogSection = () => {
                     </div>
 
                     {/* 2nd Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
                         <img src={blogPic2} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">5 things you need to know to become a front-end developer</h5>
@@ -46,7 +46,7 @@ const BlogSection = () => {
                     </div>
 
                     {/* 3rd Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
                         <img src={blogPic3} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">My journey to become a developer</h5>
