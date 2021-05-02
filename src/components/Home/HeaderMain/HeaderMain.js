@@ -3,6 +3,7 @@ import './HeaderMain.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import background from '../../../images/background.png';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const backgroundPicture = {
     backgroundImage: `url(${background})`,
@@ -27,6 +28,9 @@ const HeaderMain = () => {
                     </a>
                     <a style={{ color: '#0e76a8' }} className='ps-4' href="https://www.linkedin.com/in/mehnaz-ahmed-khan31/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} size='3x' />
+                    </a>
+                    <a style={{ color: '#FFFFFF' }} className='ps-4' href="mailto:mehnazkhan231@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faEnvelope} size='3x' />
                     </a>
                     <a style={{ color: '#000000' }} className='ps-4' href="https://github.com/MK-Khan123" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} size='3x' />
