@@ -38,7 +38,7 @@ const Projects = () => {
                     </div>
                     <div className='col-md-6 ms-3'>
                         <h2>City Wheels Auto Shop</h2>
-                        <h5>It is a MERN Stack assignment.</h5>
+                        <h6 className='fst-italic'>An automotive service oriented website (MERN stack)</h6>
                         <ul>
                             <li>
                                 User can opt for a service from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in method using Firebase Authentication.
@@ -57,13 +57,23 @@ const Projects = () => {
                             </li>
                         </ul>
                         <h6>Technology</h6>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Router</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Stripe.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>MongoDB</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Firebase Authentication</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Context API</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Bootstrap 5.0</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Node.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Express.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Hooks Form</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Axios</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CRUD operations</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Heroku</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JavaScript</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CSS3</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JSX</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Font Awesome</span>
                         <ul className='list-inline ms-2 mt-2'>
                             <li className='list-inline-item'>
                                 <div>
@@ -110,7 +120,7 @@ const Projects = () => {
                     </div>
                     <div className='col-md-6 ms-3'>
                         <h2>Grocery House</h2>
-                        <h5>It is a Full Stack assignment.</h5>
+                        <h6 className='fst-italic'>A grocery shop website (MERN Stack)</h6>
                         <ul>
                             <li>
                                 User can buy grocery items from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google and Facebook sign in method using Firebase Authentication.
@@ -129,12 +139,22 @@ const Projects = () => {
                             </li>
                         </ul>
                         <h6>Technology</h6>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Router</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>MongoDB</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Firebase Authentication</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Context API</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Bootstrap 5.0</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Node.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Express.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Hooks Form</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Axios</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CRUD operations</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Heroku</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JavaScript</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CSS3</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JSX</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Font Awesome</span>
                         <ul className='list-inline ms-2 mt-2'>
                             <li className='list-inline-item'>
                                 <div>
@@ -181,7 +201,7 @@ const Projects = () => {
                     </div>
                     <div className='col-md-6 ms-3'>
                         <h2>City Transport</h2>
-                        <h5>It is a MERN Stack assignment.</h5>
+                        <h6 className='fst-italic'>A website for booking different transport services</h6>
                         <ul>
                             <li>
                                 User can book tickets based on their preferred ride from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google and Facebook sign in method using Firebase Authentication. Users can also create their account (if they don’t have any) and details are stored on Firebase.
@@ -194,12 +214,16 @@ const Projects = () => {
                             </li>
                         </ul>
                         <h6>Technology</h6>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Router</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Firebase Authentication</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Context API</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Bootstrap 5.0</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JavaScript</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CSS3</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JSX</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Font Awesome</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Netlify</span>
                         <ul className='list-inline ms-2 mt-2'>
                             <li className='list-inline-item'>
                                 <div>
@@ -246,31 +270,34 @@ const Projects = () => {
                     </div>
                     <div className='col-md-6 ms-3'>
                         <h2>English Premiere League Elites</h2>
-                        <h5>It is a MERN Stack assignment.</h5>
+                        <h6 className='fst-italic'>A website where best EPL clubs are displayed dynamically</h6>
                         <ul>
                             <li>
-                                User can opt for a service from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in method using Firebase Authentication.
+                                In this project, we practically applied the functional concepts of React routing.
                             </li>
                             <li>
-                                The data displayed in our homepage is fetched from MongoDB but for some parts we used static data. We used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                We fetched our data from TheSportsDB.com and used route parameter to display data dynamically prompted through unique interaction.
                             </li>
                             <li>
-                                User can book a service, can pay with card (integrated payment gateway method specifically Stripe Payment). User can view his/her orders (along with status) and provide reviews which is shown on the review section of the homepage dynamically.
+                                We accessed unique data using route parameter and generated dynamic URL to load and display data.
                             </li>
                             <li>
-                                Exhausted CRUD operations on multiple occasions while building the website. Implemented Admin/User differentiation. Admin can add/remove/status of different services and changes are reflected immediately on the website. Status updates are immediately reflected on User Panel. An admin is capable of adding another user as an admin.
+                                In addition, we used conditional formatting and plain bootstrap inside the source code to make it more functional and device responsive.
                             </li>
                             <li>
-                                In addition, we used plain bootstrap to make the website device responsive. Furthermore, we deployed our site on Firebase which can be accessed through the above mentioned link to experience the website.
+                                Furthermore, we deployed our site on Netlify which can be accessed through the above mentioned link to experience the website.
                             </li>
                         </ul>
                         <h6>Technology</h6>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
-                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>HTML5</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React.js</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>React Router</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>RESTful APIs</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Bootstrap 5.0</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JavaScript</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>CSS3</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>JSX</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Font Awesome</span>
+                        <span className='ms-2 mb-1 p-2 badge bg-secondary'>Netlify</span>
                         <ul className='list-inline ms-2 mt-2'>
                             <li className='list-inline-item'>
                                 <div>

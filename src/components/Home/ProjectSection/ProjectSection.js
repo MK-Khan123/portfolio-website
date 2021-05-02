@@ -6,6 +6,7 @@ import './ProjectSection.css';
 
 const projects = [
     {
+        id: 1,
         projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
         projectTitle: 'City Transport',
         projectDescription: 'A website for booking different transport services across the city',
@@ -13,6 +14,7 @@ const projects = [
         liveSite: 'https://practical-joliot-41cf3a.netlify.app/'
     },
     {
+        id: 2,
         projectImg: 'https://i.ibb.co/XD81z21/fullstack1.png',
         projectTitle: 'Grocery House',
         projectDescription: 'A grocery shop website where users can purchase daily essentials',
@@ -20,6 +22,7 @@ const projects = [
         liveSite: 'https://fullstack-assignment.firebaseapp.com/'
     },
     {
+        id: 3,
         projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
         projectTitle: 'City Wheels Auto Shop',
         projectDescription: 'An automotive service oriented website where people can opt for services online',
@@ -36,9 +39,9 @@ const ProjectSection = () => {
                 <div className='row'>
                     {
                         projects.map(project => {
-                            const { projectImg, projectTitle, projectDescription, codeLink, liveSite } = project;
+                            const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
                             return (
-                                <div className="card m-3 project-card text-white projectCardStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                                <div key={id} className="card m-3 project-card text-white projectCardStyle" style={{ width: "25rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
                                     <img src={projectImg} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{projectTitle}</h5>
