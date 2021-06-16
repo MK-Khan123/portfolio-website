@@ -10,58 +10,56 @@ const BlogSection = () => {
     return (
         <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.1)' }} className='pb-5'>
             <h2 className='p-5 text-center'>My blogs (not published yet)</h2>
-            <div className='d-flex justify-content-center'>
-                <div className='row'>
+            <div className='d-flex justify-content-center flex-wrap'>
 
-                    {/* 1st Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                        <img src={blogPic1} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">All you need to know about JavaScript</h5>
-                            <p className="card-text">In this blog, I'll be discussing about JavaScript knowledge that is required to become a front-end developer</p>
-                        </div>
-                        <div className='card-footer'>
-                            <div>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                                </a>
-                            </div>
+                {/* 1st Blog */}
+                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <img src={blogPic1} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">All you need to know about JavaScript</h5>
+                        <p className="card-text">In this blog, I'll be discussing about JavaScript knowledge that is required to become a front-end developer</p>
+                    </div>
+                    <div className='card-footer'>
+                        <div>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
+                            </a>
                         </div>
                     </div>
-
-                    {/* 2nd Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                        <img src={blogPic2} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">5 things you need to know to become a front-end developer</h5>
-                            <p className="card-text">I have tried to simplify the technological know-how that is required to start as a React developer</p>
-                        </div>
-                        <div className='card-footer'>
-                            <div>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 3rd Blog */}
-                    <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                        <img src={blogPic3} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">My journey to become a developer</h5>
-                            <p className="card-text">In this blog, I tried to explain to people that educational background doesn't matter to learn anything new. The 'Will to Act' does</p>
-                        </div>
-                        <div className='card-footer'>
-                            <div>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Blogs Ended */}
                 </div>
+
+                {/* 2nd Blog */}
+                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <img src={blogPic2} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">5 things you need to know to become a front-end developer</h5>
+                        <p className="card-text">I have tried to simplify the technological know-how that is required to start as a React developer</p>
+                    </div>
+                    <div className='card-footer'>
+                        <div>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 3rd Blog */}
+                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
+                    <img src={blogPic3} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">My journey to become a developer</h5>
+                        <p className="card-text">In this blog, I tried to explain to people that educational background doesn't matter to learn anything new. The 'Will to Act' does</p>
+                    </div>
+                    <div className='card-footer'>
+                        <div>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/* Blogs Ended */}
             </div>
         </div>
     );
