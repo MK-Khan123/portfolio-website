@@ -1,10 +1,14 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import './ProjectSection.css';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LaunchIcon from '@mui/icons-material/Launch';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions, Container, Grid, Link } from '@mui/material';
+import { Box } from '@mui/material';
 
-const projects = [
+const projectData = [
     {
         id: 1,
         projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
@@ -33,43 +37,81 @@ const projects = [
 
 const ProjectSection = () => {
     return (
-        <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.1)' }}>
-            <h2 className='text-center p-5'>My Projects</h2>
-            <div className='d-flex justify-content-center flex-wrap'>
-                {
-                    projects.map(project => {
-                        const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
-                        return (
-                            <div key={id} className="card m-3 project-card text-white projectCardStyle" style={{ flexBasis: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                                <img src={projectImg} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{projectTitle}</h5>
-                                    <p className="card-text">{projectDescription}</p>
-                                </div>
-                                <div className='card-footer'>
-                                    <ul className='list-inline'>
-                                        <li className='list-inline-item'>
-                                            <div>
-                                                <a href={codeLink} target="_blank" rel="noopener noreferrer">
-                                                    <button className='btn btn-sm btn-outline-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li className='list-inline-item'>
-                                            <div>
-                                                <a href={liveSite} target="_blank" rel="noopener noreferrer">
-                                                    <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        );
-                    })
-                }
-            </div>
-        </div>
+        <Container sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+            <Box
+                component='h2'
+                color='#C4CFDE'
+                sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
+            >
+                My Projects
+            </Box>
+            <Box sx={{ flexGrow: 1 }} component='div'>
+                <Grid container spacing={3} justifyContent='center'>
+                    {
+                        projectData.map(project => {
+                            const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
+                            return (
+                                <Grid
+                                    key={id}
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}
+                                    item
+                                    md={4}
+                                    sm={12}
+                                >
+                                    <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                height="250"
+                                                image={projectImg}
+                                                alt="project image"
+                                            />
+                                            <CardContent>
+                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
+                                                    {projectTitle}
+                                                </Typography>
+                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
+                                                    {projectDescription}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Link sx={{ textDecoration: 'none' }}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                variant="body2"
+                                                href={codeLink}
+                                            >
+                                                <Button size="small" alignItems='center' color="warning">
+                                                    <GitHubIcon />
+                                                    <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>GitHub</Box>
+                                                </Button>
+                                            </Link>
+                                            <Link sx={{ textDecoration: 'none' }}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                textDecoration='none'
+                                                variant="body2"
+                                                href={liveSite}
+                                            >
+                                                <Button size="small" alignItems='center' color="warning">
+                                                    <LaunchIcon />
+                                                    <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>Live Site</Box>
+                                                </Button>
+                                            </Link>
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                            );
+                        })
+                    }
+                </Grid>
+            </Box>
+        </Container>
     );
 };
 

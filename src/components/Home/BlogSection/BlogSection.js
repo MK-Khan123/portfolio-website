@@ -1,67 +1,101 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import LaunchIcon from '@mui/icons-material/Launch';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions, Container, Grid, Link } from '@mui/material';
+import { Box } from '@mui/material';
 import blogPic1 from '../../../images/javaScript.png';
 import blogPic2 from '../../../images/front-end-developer.jpg';
 import blogPic3 from '../../../images/developer.png';
-import './BlogSection.css';
+
+const blogData = [
+    {
+        id: 1,
+        blogImage: blogPic1,
+        blogTitle: '10 important JavaScript concepts that can help in interview',
+        blogDescription: "In this blog, I'll be discussing about JavaScript concepts which are essential for facing interviews",
+        blogLink: 'https://mehnazkhan231.medium.com/10-important-javascript-concepts-that-can-help-in-interview-5fa2c8ba25a6'
+    },
+    {
+        id: 2,
+        blogImage: blogPic2,
+        blogTitle: '10 things about ReactJS that a developer should know',
+        blogDescription: "In this blog, I'll be discussing about ReactJS concepts which are bare minimum one should have some idea about",
+        blogLink: 'https://mehnazkhan231.medium.com/10-things-about-reactjs-that-a-developer-should-know-1973983c8dbb'
+    },
+    {
+        id: 3,
+        blogImage: blogPic3,
+        blogTitle: 'Another 10 important topics that JavaScript developers should know',
+        blogDescription: "In this blog, I'll be discussing about few tricky JavaScript concepts, knowing which will definitely assist one to become a better developer",
+        blogLink: 'https://mehnazkhan231.medium.com/another-10-important-topics-that-javascript-developers-should-know-5767afbab89c'
+    }
+]
 
 const BlogSection = () => {
     return (
-        <div style={{ backgroundColor: 'rgba(85, 85, 85, 0.1)' }} className='pb-5'>
-            <h2 className='p-5 text-center'>My blogs (not published yet)</h2>
-            <div className='d-flex justify-content-center flex-wrap'>
-
-                {/* 1st Blog */}
-                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                    <img src={blogPic1} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">All you need to know about JavaScript</h5>
-                        <p className="card-text">In this blog, I'll be discussing about JavaScript knowledge that is required to become a front-end developer</p>
-                    </div>
-                    <div className='card-footer'>
-                        <div>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 2nd Blog */}
-                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                    <img src={blogPic2} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">5 things you need to know to become a front-end developer</h5>
-                        <p className="card-text">I have tried to simplify the technological know-how that is required to start as a React developer</p>
-                    </div>
-                    <div className='card-footer'>
-                        <div>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 3rd Blog */}
-                <div className="card m-3 blog-card text-white blogStyle" style={{ width: "19rem", backgroundColor: 'rgba(23, 42, 69, 0.9)' }}>
-                    <img src={blogPic3} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">My journey to become a developer</h5>
-                        <p className="card-text">In this blog, I tried to explain to people that educational background doesn't matter to learn anything new. The 'Will to Act' does</p>
-                    </div>
-                    <div className='card-footer'>
-                        <div>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                <button className='btn btn-sm btn-outline-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Read More</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                {/* Blogs Ended */}
-            </div>
-        </div>
+        <Container sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+            <Box
+                component='h2'
+                color='#C4CFDE'
+                sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
+            >
+                My Blogs
+            </Box>
+            <Box sx={{ flexGrow: 1 }} component='div'>
+                <Grid container spacing={3} justifyContent='center'>
+                    {
+                        blogData.map(blog => {
+                            const { blogImage, blogTitle, blogDescription, blogLink, id } = blog;
+                            return (
+                                <Grid key={id}
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}
+                                    item md={4} sm={12}>
+                                    <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                height="250"
+                                                image={blogImage}
+                                                alt="blog image"
+                                            />
+                                            <CardContent>
+                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
+                                                    {blogTitle}
+                                                </Typography>
+                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
+                                                    {blogDescription}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                            <Link
+                                                sx={{ textDecoration: 'none' }}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                variant="body2"
+                                                href={blogLink}
+                                            >
+                                                <Button size="small" alignItems='center' color="warning">
+                                                    <LaunchIcon />
+                                                    <Box sx={{ pl: 1 }} component='p'>Read More</Box>
+                                                </Button>
+                                            </Link>
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                            );
+                        })
+                    }
+                </Grid>
+            </Box>
+        </Container>
     );
 };
 

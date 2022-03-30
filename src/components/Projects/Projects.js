@@ -1,21 +1,21 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LaunchIcon from '@mui/icons-material/Launch';
 import Navbar from '../Shared/Navbar/Navbar';
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
     document.title = 'Projects';
 
     return (
-        <div>
+        <div style={{backgroundColor:'#505050'}}>
             <Navbar />
             <h2 className='p-5 text-center'>My Projects</h2>
             <div className='container'>
 
                 {/* 1st Project */}
-                <div className='d-flex mb-4 border p-3'>
-                    <div className='col-md-6'>
+                <div>
+                    <Fade left>
                         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -37,8 +37,8 @@ const Projects = () => {
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
-                    </div>
-                    <div className='col-md-6 ms-3'>
+                    </Fade>
+                    <Fade right>
                         <h2>City Wheels Auto Shop</h2>
                         <h6 className='fst-italic'>An automotive service oriented website (MERN stack)</h6>
                         <ul>
@@ -80,24 +80,24 @@ const Projects = () => {
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://github.com/MK-Khan123/complete-website-client' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
+                                        <button className='btn btn-sm btn-info'><GitHubIcon sx={{ fontSize: 50, color: '#000000' }} /> GitHub</button>
                                     </a>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://complete-website-assignm-474e8.firebaseapp.com/' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
+                                        <button className='btn btn-sm btn-warning'><LaunchIcon /> Live Site</button>
                                     </a>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </Fade>
                 </div>
 
                 {/* 2nd Project */}
-                <div className="d-flex mb-4 border p-3">
-                    <div className='col-md-6'>
+                <div>
+                    <Fade left>
                         <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -119,8 +119,8 @@ const Projects = () => {
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
-                    </div>
-                    <div className='col-md-6 ms-3'>
+                    </Fade>
+                    <Fade right>
                         <h2>Grocery House</h2>
                         <h6 className='fst-italic'>A grocery shop website (MERN Stack)</h6>
                         <ul>
@@ -161,24 +161,24 @@ const Projects = () => {
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://github.com/MK-Khan123/fullstack-assignment-client' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
+                                        <button className='btn btn-sm btn-info'><GitHubIcon sx={{ fontSize: 50, color: '#000000' }} /> GitHub</button>
                                     </a>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://fullstack-assignment.firebaseapp.com/' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
+                                        <button className='btn btn-sm btn-warning'><LaunchIcon /> Live Site</button>
                                     </a>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </Fade>
                 </div>
 
                 {/* 3rd Project */}
-                <div className="d-flex mb-4 border p-3">
-                    <div className='col-md-6'>
+                <div>
+                    <Fade left>
                         <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -200,8 +200,9 @@ const Projects = () => {
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
-                    </div>
-                    <div className='col-md-6 ms-3'>
+                    </Fade>
+
+                    <Fade right>
                         <h2>City Transport</h2>
                         <h6 className='fst-italic'>A website for booking different transport services</h6>
                         <ul>
@@ -230,24 +231,24 @@ const Projects = () => {
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://github.com/MK-Khan123/city-transport' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
+                                        <button className='btn btn-sm btn-info'><GitHubIcon sx={{ fontSize: 50, color: '#000000' }} /> GitHub</button>
                                     </a>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://practical-joliot-41cf3a.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
+                                        <button className='btn btn-sm btn-warning'><LaunchIcon /> Live Site</button>
                                     </a>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </Fade>
                 </div>
 
                 {/* 4th Project */}
-                <div className="d-flex mb-4 border p-3">
-                    <div className='col-md-6'>
+                <div>
+                    <Fade left>
                         <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -269,8 +270,8 @@ const Projects = () => {
                                 <span className="visually-hidden">Next</span>
                             </button>
                         </div>
-                    </div>
-                    <div className='col-md-6 ms-3'>
+                    </Fade>    
+                    <Fade right>
                         <h2>English Premiere League Elites</h2>
                         <h6 className='fst-italic'>A website where best EPL clubs are displayed dynamically</h6>
                         <ul>
@@ -304,19 +305,19 @@ const Projects = () => {
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://github.com/MK-Khan123/epl-elites' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-info'><FontAwesomeIcon icon={faGithub} /> GitHub</button>
+                                        <button className='btn btn-sm btn-info'><GitHubIcon sx={{ fontSize: 50, color: '#000000' }} /> GitHub</button>
                                     </a>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
                                 <div>
                                     <a href='https://sharp-bartik-4aeef2.netlify.app/' target="_blank" rel="noopener noreferrer">
-                                        <button className='btn btn-sm btn-warning'><FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site</button>
+                                        <button className='btn btn-sm btn-warning'><LaunchIcon /> Live Site</button>
                                     </a>
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </Fade>
                 </div>
                 {/* PROJECT ENDED */}
             </div>

@@ -1,9 +1,13 @@
 import React from 'react';
-import './HeaderMain.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import background from '../../../images/background.png';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Avatar, Box, Grid, Link } from '@mui/material';
+import { Typewriter } from 'react-simple-typewriter';
+import myPic from '../../../images/myPic.png';
 
 const backgroundPicture = {
     backgroundImage: `url(${background})`,
@@ -16,34 +20,71 @@ const backgroundPicture = {
 
 const HeaderMain = () => {
     return (
-        <div style={{ height: '760px' }}>
-            <div className='d-flex flex-column align-items-center text-white' style={backgroundPicture}>
-                <h1 style={{ paddingTop: '200px' }}>Mehnaz Ahmed Khan</h1>
-                <div style={{ color: 'lightgrey' }} className='typewriter'>
-                    <h5>React Developer | Programmer | Business Graduate</h5>
-                </div>
-                <div className='pt-3'>
-                    <a style={{ color: '#3b5998' }} className='ps-4' href="https://www.facebook.com/mehnaz.ahmed.5030/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faFacebook} size='3x' />
-                    </a>
-                    <a style={{ color: '#0e76a8' }} className='ps-4' href="https://www.linkedin.com/in/mehnaz-ahmed-khan31/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} size='3x' />
-                    </a>
-                    <a style={{ color: '#FFFFFF' }} className='ps-4' href="mailto:mehnazkhan231@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faEnvelope} size='3x' />
-                    </a>
-                    <a style={{ color: '#000000' }} className='ps-4' href="https://github.com/MK-Khan123" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGithub} size='3x' />
-                    </a>
-                    <a style={{ color: '#1DA1F2' }} className='ps-4' href="https://twitter.com/MehnazAhmedKha1" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faTwitter} size='3x' />
-                    </a>
-                </div>
-                <div className='pt-3'>
-                    <a target='_blank' className='btn btn-danger' rel="noopener noreferrer" href='https://drive.google.com/uc?export=download&id=1MTfkVtREFJNFP_wyXy2DzKuVpJYYOCFf'><FontAwesomeIcon icon={faFile} /> Download Resume</a>
-                </div>
-            </div>
-        </div>
+        <Box sx={{ height: 760 }}>
+            <Box sx={{ color: 'white' }} style={backgroundPicture}>
+                <Grid container spacing={2}>
+                    <Grid item xs={0} sm={4}>
+                        <Box sx={{ textAlign: 'center' }}>
+                            <Avatar
+                                sx={{
+                                    width: 200,
+                                    height: 200,
+                                    filter: 'grayScale(50%)',
+                                    border: '10px solid #444444',
+                                    display: { xs: 'none', sm: 'inline-block' },
+                                    margin: '150px'
+                                }}
+                                alt="Mehnaz Ahmed"
+                                src={myPic}
+                            />
+                        </Box>
+                    </Grid>
+
+                    <Grid sx={{ textAlign: 'center' }} item xs={12} sm={8}>
+                        <Box
+                            sx={{
+                                marginTop: '150px',
+                                fontSize: '3.5rem',
+                                fontWeight: 'bold',
+                                marginBottom: '0.5rem',
+                                fontFamily: 'Varela Round, sans-serif'
+                            }}
+                            component='h1'
+                        >
+                            Hi, I'm <Box component='span' color='#00FFFF'>Mehnaz Ahmed Khan</Box>
+                        </Box>
+                        <Box sx={{ color: 'lightgrey', fontSize: '3rem', marginY: '0.5rem', fontFamily: 'Varela Round, sans-serif' }} component='p' >
+                            a <Typewriter
+                                words={['Frontend Developer', 'Programmer', 'Technology Enthusiast']}
+                                loop={0}
+                                cursor
+                                cursorStyle='_'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                            />
+                        </Box>
+                        <Box pt={3}>
+                            <Link px={3} href="https://www.facebook.com/mehnaz.ahmed.5030/" target="_blank" rel="noopener noreferrer">
+                                <FacebookRoundedIcon sx={{ fontSize: 50, color: '#3b5998' }} />
+                            </Link>
+                            <Link px={3} href="https://www.linkedin.com/in/mehnaz-ahmed-khan/" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon sx={{ fontSize: 50, color: '#0e76a8' }} />
+                            </Link>
+                            <Link px={3} href="mailto:mehnazkhan231@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <EmailRoundedIcon sx={{ fontSize: 50, color: '#FFFFFF' }} />
+                            </Link>
+                            <Link px={3} href="https://github.com/MK-Khan123" target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon sx={{ fontSize: 50, color: '#000000' }} />
+                            </Link>
+                            <Link px={3} href="https://twitter.com/MehnazAhmedKha1" target="_blank" rel="noopener noreferrer">
+                                <TwitterIcon sx={{ fontSize: 50, color: '#1DA1F2' }} />
+                            </Link>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Box>
+        </Box>
     );
 };
 
