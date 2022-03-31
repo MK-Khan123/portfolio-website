@@ -1,25 +1,24 @@
 import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import BlogSection from '../BlogSection/BlogSection';
-import Contact from '../Contact/Contact';
+import ContactSection from '../ContactSection/ContactSection';
 import Header from '../Header/Header';
 import HeaderMain from '../HeaderMain/HeaderMain';
-import MyResume from '../MyResume/MyResume';
 import ProjectSection from '../ProjectSection/ProjectSection';
+import TechnologySection from '../TechnologySection/TechnologySection';
 
 const Home = () => {
-    document.title = 'Home';
 
     return (
-        <div>
+        <section id='home'>
             <Header />
             <HeaderMain />
             <ProjectSection />
-            <MyResume />
+            <TechnologySection />
             <BlogSection />
-            <Contact />
+            <ContactSection />
             <Footer />
-        </div>
+        </section>
     );
 };
 

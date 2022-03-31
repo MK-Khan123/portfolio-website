@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import contactPic from '../../../images/contact.jpg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,6 +8,18 @@ import SendIcon from '@mui/icons-material/Send';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { styled } from '@mui/material/styles';
 import { Box, Button, Container, Grid, Link, TextField } from '@mui/material';
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6gzgrvx', 'template_5lrib0o', e.target, 'user_ubOvzdirB7GpwSmCtJlmr')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    e.target.reset();
+}
 
 const CssTextField = styled(TextField)({
     '& .MuiInputLabel-root': {
@@ -44,9 +57,9 @@ const CssTextField = styled(TextField)({
     }
 });
 
-const Contact = () => {
+const ContactSection = () => {
     return (
-        <Container sx={{ paddingBottom: 8 }}>
+        <Container id='contact' sx={{ paddingBottom: 8 }}>
             <Box component='h2' color='#C4CFDE' sx={{ fontSize: '4rem', fontFamily: 'Varela Round, sans-serif', marginBottom: '0.85rem', textAlign: 'center' }}>Let's work together...</Box>
             <Box component='p' color='#FFFFFF' sx={{ fontSize: '1.2rem', fontStyle: 'italic', marginY: '0.85rem', textAlign: 'center' }}>How do you take your coffee?</Box>
 
@@ -158,55 +171,88 @@ const Contact = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Box sx={{ boxShadow: 6, p: 4, borderRadius: 5, minHeight: '720px' }}>
-                        <Grid container spacing={2}>
-                            <Grid item xs={6}>
-                                <CssTextField
-                                    helperText="Enter your full name"
-                                    fullWidth
-                                    id="custom-css-outlined-input"
-                                    label="Your Name"
-                                />
+                        <Box
+                            sx={{
+                                marginTop: '0',
+                                color: '#E4E6EA',
+                                fontWeight: 400
+                            }}
+                            component='h2'
+                        >
+                            Leave a message
+                        </Box>
+                        <form onSubmit={sendEmail}>
+                            <Grid container spacing={2}>
+                                <Grid item xs={6}>
+                                    <CssTextField
+                                        type='text'
+                                        name='name'
+                                        helperText="Enter your full name"
+                                        fullWidth
+                                        id="custom-css-outlined-input"
+                                        label="Your Name"
+                                        required
+                                    />
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <CssTextField
+                                        type='number'
+                                        name='number'
+                                        helperText="Enter your phone number"
+                                        fullWidth
+                                        id="custom-css-outlined-input"
+                                        label="Phone Number"
+                                    />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <CssTextField
+                                        type='email'
+                                        name='email'
+                                        helperText="Enter your valid email"
+                                        fullWidth
+                                        label="Email"
+                                        id="custom-css-outlined-input"
+                                        required
+                                    />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <CssTextField
+                                        type='text'
+                                        name='subject'
+                                        helperText="Enter subject of your email"
+                                        fullWidth
+                                        label="Subject"
+                                        id="custom-css-outlined-input"
+                                        required
+                                    />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <CssTextField
+                                        type='text'
+                                        name='message'
+                                        helperText="Enter your message"
+                                        fullWidth
+                                        id="custom-css-outlined-input"
+                                        label="Your Message"
+                                        multiline
+                                        minRows={10}
+                                        required
+                                    />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Button
+                                        type='submit'
+                                        sx={{ fontFamily: 'Poppins, sans-serif' }}
+                                        size='large'
+                                        variant="outlined"
+                                        color="error"
+                                        endIcon={<SendIcon />}
+                                    >
+                                        SEND MESSAGE
+                                    </Button>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={6}>
-                                <CssTextField
-                                    helperText="Enter your phone number"
-                                    fullWidth
-                                    id="custom-css-outlined-input"
-                                    label="Phone Number"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <CssTextField
-                                    helperText="Enter your valid email"
-                                    fullWidth
-                                    label="Email"
-                                    id="custom-css-outlined-input"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <CssTextField
-                                    helperText="Enter subject of your email"
-                                    fullWidth
-                                    label="Subject"
-                                    id="custom-css-outlined-input"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <CssTextField
-                                    helperText="Enter your message"
-                                    fullWidth
-                                    id="custom-css-outlined-input"
-                                    label="Your Message"
-                                    multiline
-                                    minRows={12}
-                                />
-                            </Grid>
-                            <Grid item xs={8}>
-                                <Button sx={{ fontFamily: 'Poppins, sans-serif' }} size='large' variant="outlined" color="error" endIcon={<SendIcon />}>
-                                    SEND MESSAGE
-                                </Button>
-                            </Grid>
-                        </Grid>
+                        </form>
                     </Box>
                 </Grid>
             </Grid>
@@ -214,4 +260,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactSection;

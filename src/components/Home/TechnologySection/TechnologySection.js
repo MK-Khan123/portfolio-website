@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, Card, CardActionArea, CardContent, Container, Typography } from '@mui/material';
 
-const MyResume = () => {
+const TechnologySection = () => {
     return (
-        <Container sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+        <Container id='technology' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
             <Box
                 component='h2'
                 color='#C4CFDE'
@@ -65,4 +65,4 @@ const MyResume = () => {
     );
 };
 
-export default MyResume;
+export default TechnologySection;

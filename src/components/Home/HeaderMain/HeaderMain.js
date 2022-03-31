@@ -27,12 +27,12 @@ const HeaderMain = () => {
                         <Box sx={{ textAlign: 'center' }}>
                             <Avatar
                                 sx={{
-                                    width: 200,
-                                    height: 200,
+                                    width: '45.55%',
+                                    height: '27.12%',
                                     filter: 'grayScale(50%)',
                                     border: '10px solid #444444',
-                                    display: { xs: 'none', sm: 'inline-block' },
-                                    margin: '150px'
+                                    display: { xs: 'none', md: 'inline-block' },
+                                    margin: '9.375rem'
                                 }}
                                 alt="Mehnaz Ahmed"
                                 src={myPic}

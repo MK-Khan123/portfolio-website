@@ -1,18 +1,9 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import { Link } from '@mui/material';
+import { AppBar, Box, Container, IconButton, Link, Menu, MenuItem, Toolbar } from '@mui/material';
 import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
-import { NavLink } from 'react-router-dom';
 
-const pages = ['home', 'about', 'projects', 'blogs', 'contact'];
+const pages = ['home', 'projects', 'technology', 'blogs', 'contact'];
 
 const Navbar = () => {
 
@@ -72,21 +63,21 @@ const Navbar = () => {
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
                                 sx={{
-                                    display: { xs: 'block', md: 'none' },
+                                    display: { xs: 'block', md: 'none' }
                                 }}
                             >
                                 {pages.map((page, index) => (
-                                    <MenuItem
-                                        key={index}
-                                        onClick={handleCloseNavMenu}
-                                        sx={{ textTransform: 'uppercase', fontWeight: 'bold' }}
-                                    >
-                                        <NavLink
-                                            style={{ textDecoration: 'none', fontFamily: 'Poppins, sans-serif' }}
-                                            to={`/${page}`}
+                                    <MenuItem key={index} onClick={handleCloseNavMenu}>
+                                        <Link
+                                            href={`#${page}`}
+                                            sx={{
+                                                textDecoration: 'none',
+                                                fontFamily: 'Poppins, sans-serif',
+                                                textTransform: 'uppercase'
+                                            }}
                                         >
                                             {page}
-                                        </NavLink>
+                                        </Link>
                                     </MenuItem>
                                 ))}
                             </Menu>
@@ -94,28 +85,45 @@ const Navbar = () => {
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page, index) => (
-                                <Button
+                                <Link
                                     key={index}
                                     onClick={handleCloseNavMenu}
-                                    variant='text'
-                                    sx={{ my: 2, mr: 3, display: 'block' }}
-                                >
-                                    <NavLink
-                                        style={{
+                                    href={`#${page}`}
+                                    sx={[
+                                        {
+                                            my: 2,
+                                            mr: 3,
+                                            display: 'block',
+                                            transition: 'transform 0.3s ease-out',
                                             textDecoration: 'none',
+                                            textTransform: 'uppercase',
                                             color: 'white',
-                                            fontSize: '1rem',
-                                            transition: 'transform'
-                                        }}
-                                        to={`/${page}`}
-                                    >
-                                        {page}
-                                    </NavLink>
-                                </Button>
+                                            fontSize: '1rem'
+                                        },
+                                        {
+                                            '&:hover': {
+                                                color: '#1DA1F2',
+                                                transform: 'translateY(8px)'
+                                            }
+                                        }
+                                    ]}
+                                >
+                                    {page}
+                                </Link>
                             ))}
                         </Box>
 
-                        <Box sx={{ flexGrow: 0, display: 'flex' }}>
+                        <Box
+                            sx={[
+                                { flexGrow: 0, display: 'flex', transition: 'transform 0.3s ease-out' },
+                                {
+                                    '&:hover': {
+                                        color: '#1DA1F2',
+                                        transform: 'translateY(8px)'
+                                    }
+                                }
+                            ]}
+                        >
                             <Box sx={{ display: 'block' }}>
                                 <FileDownloadRoundedIcon />
                             </Box>

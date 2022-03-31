@@ -37,7 +37,7 @@ const projectData = [
 
 const ProjectSection = () => {
     return (
-        <Container sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+        <Container id='projects' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
             <Box
                 component='h2'
                 color='#C4CFDE'
