@@ -1,5 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
+import { ReactComponent as MySvg } from '../../../images/up-arrow.svg';
 
 
 const Footer = () => {
@@ -13,6 +15,7 @@ const Footer = () => {
                 textAlign: 'center'
             }}
         >
+            <ScrollToTop style={{ borderRadius: '20px', backgroundColor: 'cyan' }} smooth top={200} component={<MySvg />} />
             Copyright © {(new Date()).getFullYear()} | Built by Mehnaz Ahmed Khan
         </Box >
     );

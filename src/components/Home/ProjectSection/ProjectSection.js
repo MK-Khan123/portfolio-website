@@ -86,7 +86,7 @@ const ProjectSection = () => {
                                                 variant="body2"
                                                 href={codeLink}
                                             >
-                                                <Button size="small" alignItems='center' color="warning">
+                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
                                                     <GitHubIcon />
                                                     <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>GitHub</Box>
                                                 </Button>
@@ -98,7 +98,7 @@ const ProjectSection = () => {
                                                 variant="body2"
                                                 href={liveSite}
                                             >
-                                                <Button size="small" alignItems='center' color="warning">
+                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
                                                     <LaunchIcon />
                                                     <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>Live Site</Box>
                                                 </Button>

@@ -82,7 +82,7 @@ const BlogSection = () => {
                                                 variant="body2"
                                                 href={blogLink}
                                             >
-                                                <Button size="small" alignItems='center' color="warning">
+                                               <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
                                                     <LaunchIcon />
                                                     <Box sx={{ pl: 1 }} component='p'>Read More</Box>
                                                 </Button>
