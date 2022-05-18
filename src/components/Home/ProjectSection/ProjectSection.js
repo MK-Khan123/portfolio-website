@@ -12,6 +12,14 @@ import { NavLink } from 'react-router-dom';
 const projectData = [
     {
         id: 1,
+        projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-1_tsxu0b.png',
+        projectTitle: 'Testo Burger (ongoing project)',
+        projectDescription: 'A restaurant website where people can order junk food online',
+        codeLink: 'https://github.com/MK-Khan123/testo-burger-client',
+        liveSite: 'https://testo-burger.web.app/home'
+    },
+    {
+        id: 2,
         projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
         projectTitle: 'City Wheels Auto Shop',
         projectDescription: 'An automotive service oriented website where people can opt for services online',
@@ -19,20 +27,12 @@ const projectData = [
         liveSite: 'https://complete-website-assignm-474e8.firebaseapp.com/'
     },
     {
-        id: 2,
+        id: 3,
         projectImg: 'https://i.ibb.co/XD81z21/fullstack1.png',
         projectTitle: 'Grocery House',
         projectDescription: 'A grocery shop website where users can purchase daily essentials',
         codeLink: 'https://github.com/MK-Khan123/fullstack-assignment-client',
         liveSite: 'https://fullstack-assignment.firebaseapp.com/'
-    },
-    {
-        id: 3,
-        projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
-        projectTitle: 'City Transport',
-        projectDescription: 'A website for booking different transport services across the city',
-        codeLink: 'https://github.com/MK-Khan123/city-transport',
-        liveSite: 'https://practical-joliot-41cf3a.netlify.app/'
     }
 ];
 
