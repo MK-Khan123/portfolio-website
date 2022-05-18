@@ -59,7 +59,7 @@ const CssTextField = styled(TextField)({
 
 const ContactSection = () => {
     return (
-        <Container id='contact' sx={{ paddingBottom: 8 }}>
+        <Container id='contact-section' sx={{ paddingBottom: 8 }}>
             <Box component='h2' color='#C4CFDE' sx={{ fontSize: '4rem', fontFamily: 'Varela Round, sans-serif', marginBottom: '0.85rem', textAlign: 'center' }}>Let's work together...</Box>
             <Box component='p' color='#FFFFFF' sx={{ fontSize: '1.2rem', fontStyle: 'italic', marginY: '0.85rem', textAlign: 'center' }}>How do you take your coffee?</Box>
 

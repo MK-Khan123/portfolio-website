@@ -36,7 +36,7 @@ const blogData = [
 
 const BlogSection = () => {
     return (
-        <Container id='blogs' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+        <Container id='blog-section' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
             <Box
                 component='h2'
                 color='#C4CFDE'

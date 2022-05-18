@@ -3,7 +3,7 @@ import { Box, Card, CardActionArea, CardContent, Container, Typography } from '@
 
 const TechnologySection = () => {
     return (
-        <Container id='technology' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+        <Container id='technology-section' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
             <Box
                 component='h2'
                 color='#C4CFDE'

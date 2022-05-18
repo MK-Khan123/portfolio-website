@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Container, IconButton, Link, Menu, MenuItem, Toolbar } from '@mui/material';
 import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
@@ -7,7 +7,7 @@ const pages = ['home', 'projects', 'technology', 'blogs', 'contact'];
 
 const Navbar = () => {
 
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -36,7 +36,6 @@ const Navbar = () => {
             >
                 <Container>
                     <Toolbar disableGutters>
-
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"

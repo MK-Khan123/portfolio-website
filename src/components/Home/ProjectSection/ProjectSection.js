@@ -7,15 +7,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Container, Grid, Link } from '@mui/material';
 import { Box } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 const projectData = [
     {
         id: 1,
-        projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
-        projectTitle: 'City Transport',
-        projectDescription: 'A website for booking different transport services across the city',
-        codeLink: 'https://github.com/MK-Khan123/city-transport',
-        liveSite: 'https://practical-joliot-41cf3a.netlify.app/'
+        projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
+        projectTitle: 'City Wheels Auto Shop',
+        projectDescription: 'An automotive service oriented website where people can opt for services online',
+        codeLink: 'https://github.com/MK-Khan123/complete-website-client',
+        liveSite: 'https://complete-website-assignm-474e8.firebaseapp.com/'
     },
     {
         id: 2,
@@ -27,17 +28,17 @@ const projectData = [
     },
     {
         id: 3,
-        projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
-        projectTitle: 'City Wheels Auto Shop',
-        projectDescription: 'An automotive service oriented website where people can opt for services online',
-        codeLink: 'https://github.com/MK-Khan123/complete-website-client',
-        liveSite: 'https://complete-website-assignm-474e8.firebaseapp.com/'
+        projectImg: 'https://i.ibb.co/949t1mD/city-transport1.png',
+        projectTitle: 'City Transport',
+        projectDescription: 'A website for booking different transport services across the city',
+        codeLink: 'https://github.com/MK-Khan123/city-transport',
+        liveSite: 'https://practical-joliot-41cf3a.netlify.app/'
     }
 ];
 
 const ProjectSection = () => {
     return (
-        <Container id='projects' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
+        <Container id='project-section' sx={{ paddingBottom: 5, borderBottom: '3px solid #970C0C' }}>
             <Box
                 component='h2'
                 color='#C4CFDE'
@@ -46,7 +47,7 @@ const ProjectSection = () => {
                 My Projects
             </Box>
             <Box sx={{ flexGrow: 1 }} component='div'>
-                <Grid container spacing={3} justifyContent='center'>
+                <Grid container columnSpacing={3} rowSpacing={6} justifyContent='center'>
                     {
                         projectData.map(project => {
                             const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
@@ -109,6 +110,13 @@ const ProjectSection = () => {
                             );
                         })
                     }
+                    <Grid item xs={12}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <Button sx={{ width: '10rem', height: '3rem' }} variant='contained' color='error'>
+                                <NavLink to='/projects' style={{ textDecoration: 'none', fontFamily: 'Poppins, sans-serif', color: '#E4E6EA', fontSize: '1.1rem' }}>View More</NavLink>
+                            </Button>
+                        </Box>
+                    </Grid>
                 </Grid>
             </Box>
         </Container>

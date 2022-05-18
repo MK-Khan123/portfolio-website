@@ -23,7 +23,7 @@ const HeaderMain = () => {
         <Box sx={{ height: 760 }}>
             <Box sx={{ color: 'white' }} style={backgroundPicture}>
                 <Grid container spacing={2}>
-                    <Grid item xs={0} sm={4}>
+                    <Grid item xs={0} md={4}>
                         <Box sx={{ textAlign: 'center' }}>
                             <Avatar
                                 sx={{
@@ -40,7 +40,7 @@ const HeaderMain = () => {
                         </Box>
                     </Grid>
 
-                    <Grid sx={{ textAlign: 'center' }} item xs={12} sm={8}>
+                    <Grid sx={{ textAlign: 'center' }} item xs={12} md={8}>
                         <Box
                             sx={{
                                 marginTop: '150px',
