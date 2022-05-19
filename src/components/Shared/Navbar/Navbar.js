@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Container, IconButton, Link, Menu, MenuItem, Toolbar } from '@mui/material';
 import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
+import { NavHashLink } from 'react-router-hash-link';
 
 const pages = ['home', 'projects', 'technology', 'blogs', 'contact'];
 
@@ -67,8 +68,8 @@ const Navbar = () => {
                             >
                                 {pages.map((page, index) => (
                                     <MenuItem key={index} onClick={handleCloseNavMenu}>
-                                        <Link
-                                            href={`#${page}`}
+                                        <Link as={NavHashLink}
+                                            to={`/home#${page}`}
                                             sx={{
                                                 textDecoration: 'none',
                                                 fontFamily: 'Poppins, sans-serif',
@@ -84,10 +85,10 @@ const Navbar = () => {
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page, index) => (
-                                <Link
+                                <Link as={NavHashLink}
                                     key={index}
                                     onClick={handleCloseNavMenu}
-                                    href={`#${page}`}
+                                    to={`/home#${page}`}
                                     sx={[
                                         {
                                             my: 2,

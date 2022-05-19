@@ -13,7 +13,7 @@ const Projects = () => {
     document.title = 'Projects';
 
     return (
-        <section id="projects">
+        <section id="project-details">
             <header>
                 <Navbar />
             </header>
@@ -23,7 +23,7 @@ const Projects = () => {
                     backgroundImage: `url(${bannerImage})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
-                    height: '25.625rem',
+                    height: '30rem',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center'
