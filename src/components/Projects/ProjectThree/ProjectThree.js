@@ -133,7 +133,8 @@ const ProjectThree = () => {
                             underline='none'
                         >
                             <Button p={4} size='large' variant='contained' color='secondary'>
-                                <GitHubIcon /> Source Code
+                                <GitHubIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Source Code</Box>
                             </Button>
                         </Link>
                         <Link
@@ -143,7 +144,8 @@ const ProjectThree = () => {
                             underline='none'
                         >
                             <Button size="large" variant='contained' color='warning'>
-                                <LaunchIcon /> Live Site
+                                <LaunchIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Live Site</Box>
                             </Button>
                         </Link>
                     </Box>

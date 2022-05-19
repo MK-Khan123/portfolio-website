@@ -155,7 +155,8 @@ const ProjectTwo = () => {
                             underline='none'
                         >
                             <Button p={4} size='large' variant='contained' color='secondary'>
-                                <GitHubIcon /> Client Side Code
+                                <GitHubIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Client Side Code</Box>
                             </Button>
                         </Link>
 
@@ -166,7 +167,8 @@ const ProjectTwo = () => {
                             underline='none'
                         >
                             <Button p={4} size='large' variant='contained' color='secondary'>
-                                <GitHubIcon /> Server Side Code
+                                <GitHubIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Server Side Code</Box>
                             </Button>
                         </Link>
 
@@ -177,7 +179,8 @@ const ProjectTwo = () => {
                             underline='none'
                         >
                             <Button size="large" variant='contained' color='warning'>
-                                <LaunchIcon /> Live Site
+                                <LaunchIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Live Site</Box>
                             </Button>
                         </Link>
                     </Box>

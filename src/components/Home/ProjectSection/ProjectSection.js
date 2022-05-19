@@ -13,7 +13,7 @@ const projectData = [
     {
         id: 1,
         projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-1_tsxu0b.png',
-        projectTitle: 'Testo Burger (ongoing project)',
+        projectTitle: 'Testo Burger (ongoing)',
         projectDescription: 'A restaurant website where people can order junk food online',
         codeLink: 'https://github.com/MK-Khan123/testo-burger-client',
         liveSite: 'https://testo-burger.web.app/home'
@@ -81,25 +81,26 @@ const ProjectSection = () => {
                                             </CardContent>
                                         </CardActionArea>
                                         <CardActions>
-                                            <Link sx={{ textDecoration: 'none' }}
+                                            <Link
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                underline='none'
                                                 variant="body2"
                                                 href={codeLink}
                                             >
-                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
+                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning">
                                                     <GitHubIcon />
                                                     <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>GitHub</Box>
                                                 </Button>
                                             </Link>
-                                            <Link sx={{ textDecoration: 'none' }}
+                                            <Link
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                textDecoration='none'
                                                 variant="body2"
+                                                underline='none'
                                                 href={liveSite}
                                             >
-                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
+                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning">
                                                     <LaunchIcon />
                                                     <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>Live Site</Box>
                                                 </Button>

@@ -57,7 +57,7 @@ const ProjectZero = () => {
                         gutterBottom
                         component="div"
                     >
-                        City Wheels Auto Shop
+                        Testo Burger (ongoing MERN Stack project)
                     </Typography>
                     <Typography
                         sx={{
@@ -70,7 +70,7 @@ const ProjectZero = () => {
                         variant="h5"
                         component="div"
                     >
-                        An automotive service oriented website (MERN stack)
+                        A restaurant website where people can order junk food online
                     </Typography>
                 </Fade>
                 <Fade right>
@@ -158,7 +158,8 @@ const ProjectZero = () => {
                             underline='none'
                         >
                             <Button p={4} size='large' variant='contained' color='secondary'>
-                                <GitHubIcon /> Client Side Code
+                                <GitHubIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Client Side Code</Box>
                             </Button>
                         </Link>
 
@@ -169,7 +170,8 @@ const ProjectZero = () => {
                             underline='none'
                         >
                             <Button p={4} size='large' variant='contained' color='secondary'>
-                                <GitHubIcon /> Server Side Code
+                                <GitHubIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Server Side Code</Box>
                             </Button>
                         </Link>
 
@@ -180,7 +182,8 @@ const ProjectZero = () => {
                             underline='none'
                         >
                             <Button size="large" variant='contained' color='warning'>
-                                <LaunchIcon /> Live Site
+                                <LaunchIcon />
+                                <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='span'>Live Site</Box>
                             </Button>
                         </Link>
                     </Box>

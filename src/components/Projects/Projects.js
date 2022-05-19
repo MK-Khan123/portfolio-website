@@ -3,10 +3,11 @@ import { Box, Container } from '@mui/material';
 import bannerImage from '../../images/project-background.jpg';
 import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
-import "./Projects.css";
+import ProjectZero from './ProjectZero/ProjectZero';
 import ProjectOne from './ProjectOne/ProjectOne';
 import ProjectTwo from './ProjectTwo/ProjectTwo';
 import ProjectThree from './ProjectThree/ProjectThree';
+import "./Projects.css";
 
 const Projects = () => {
     document.title = 'Projects';
@@ -31,6 +32,7 @@ const Projects = () => {
                 </Box>
 
                 <Container>
+                    <ProjectZero />
                     <ProjectOne />
                     <ProjectTwo />
                     <ProjectThree />
