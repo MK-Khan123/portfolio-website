@@ -8,6 +8,7 @@ import ProjectSection from '../ProjectSection/ProjectSection';
 import TechnologySection from '../TechnologySection/TechnologySection';
 
 const Home = () => {
+    document.title = 'My Portfolio Website';
 
     return (
         <section id='home'>

@@ -9,52 +9,82 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import { NavLink } from 'react-router-dom';
 
-const projectData = [
-    {
-        id: 1,
-        projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-1_tsxu0b.png',
-        projectTitle: 'Testo Burger (ongoing)',
-        projectDescription: 'A restaurant website where people can order junk food online',
-        codeLink: 'https://github.com/MK-Khan123/testo-burger-client',
-        liveSite: 'https://testo-burger.web.app/home'
-    },
-    {
-        id: 2,
-        projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
-        projectTitle: 'City Wheels Auto Shop',
-        projectDescription: 'An automotive service oriented website where people can opt for services online',
-        codeLink: 'https://github.com/MK-Khan123/complete-website-client',
-        liveSite: 'https://complete-website-assignm-474e8.firebaseapp.com/'
-    },
-    {
-        id: 3,
-        projectImg: 'https://i.ibb.co/XD81z21/fullstack1.png',
-        projectTitle: 'Grocery House',
-        projectDescription: 'A grocery shop website where users can purchase daily essentials',
-        codeLink: 'https://github.com/MK-Khan123/fullstack-assignment-client',
-        liveSite: 'https://fullstack-assignment.firebaseapp.com/'
-    }
-];
+const OtherProjects = () => {
 
-const ProjectSection = () => {
+    const otherProjects = [
+        {
+            id: 1,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-1_jvukhm.png',
+            projectTitle: 'Technical Documentation Page',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/technical-documentation-page',
+            liveSite: 'https://mk-khan123.github.io/technical-documentation-page/index.html'
+        },
+        {
+            id: 2,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-2_vfwgfb.png',
+            projectTitle: 'Product Landing Page',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/product-landing-page',
+            liveSite: 'https://mk-khan123.github.io/product-landing-page/index.html'
+        },
+        {
+            id: 3,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-3_kefsln.png',
+            projectTitle: 'A Survey Form',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/surveyForm',
+            liveSite: 'https://mk-khan123.github.io/surveyForm/index.html'
+        },
+        {
+            id: 4,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-4_uqxpvq.png',
+            projectTitle: 'A Tribute Page',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/tributePage',
+            liveSite: 'https://mk-khan123.github.io/tributePage/index.html'
+        },
+        {
+            id: 5,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956006/other-projects-portfolio-website/project-5_al1rog.png',
+            projectTitle: 'Personal Portfolio Dummy',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/personal-portfolio',
+            liveSite: 'https://mk-khan123.github.io/personal-portfolio/index.html'
+        },
+        {
+            id: 6,
+            projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-6_ezgbzr.png',
+            projectTitle: 'Responsive Landing Page',
+            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            codeLink: 'https://github.com/MK-Khan123/responsive_landing_page',
+            liveSite: 'https://mk-khan123.github.io/responsive_landing_page/'
+        }
+    ];
+
     return (
-        <Container id='projects' sx={{ paddingBottom: 5, borderBottom: '3px solid #970C0C' }}>
-            <Box
-                component='h2'
-                color='#C4CFDE'
-                sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
+        <Box mt={4}>
+            <Typography
+                sx={{
+                    fontFamily: 'Varela Round, sans-serif',
+                    fontSize: '4rem',
+                    color: '#C4CFDE',
+                    textAlign: 'center'
+                }}
+                variant="h5"
+                gutterBottom
+                component="div"
             >
-                My Projects
-            </Box>
+                Other Projects
+            </Typography>
             <Box sx={{ flexGrow: 1 }} component='div'>
                 <Grid container columnSpacing={3} rowSpacing={6} justifyContent='center'>
                     {
-                        projectData.map(project => {
+                        otherProjects.map(project => {
                             const { projectImg, projectTitle, projectDescription, codeLink, liveSite, id } = project;
                             return (
                                 <Grid
@@ -116,17 +146,17 @@ const ProjectSection = () => {
                             );
                         })
                     }
-                    <Grid item xs={12}>
+                    <Grid item mb={4} xs={12}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button sx={{ width: '10rem', height: '3rem' }} variant='contained' color='error'>
-                                <NavLink to='/projects' style={{ textDecoration: 'none', fontFamily: 'Poppins, sans-serif', color: '#E4E6EA', fontSize: '1.1rem' }}>View More</NavLink>
+                            <Button size='large' variant='contained' color='error'>
+                                <NavLink to='/home' style={{ textDecoration: 'none', fontFamily: 'Poppins, sans-serif', color: '#E4E6EA', fontSize: '1.1rem' }}>Go Back To Home</NavLink>
                             </Button>
                         </Box>
                     </Grid>
                 </Grid>
             </Box>
-        </Container>
+        </Box>
     );
 };
 
-export default ProjectSection;
+export default OtherProjects;

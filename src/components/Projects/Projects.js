@@ -7,6 +7,7 @@ import ProjectZero from './ProjectZero/ProjectZero';
 import ProjectOne from './ProjectOne/ProjectOne';
 import ProjectTwo from './ProjectTwo/ProjectTwo';
 import ProjectThree from './ProjectThree/ProjectThree';
+import OtherProjects from './OtherProjects/OtherProjects';
 import "./Projects.css";
 
 const Projects = () => {
@@ -36,6 +37,7 @@ const Projects = () => {
                     <ProjectOne />
                     <ProjectTwo />
                     <ProjectThree />
+                    <OtherProjects />
                 </Container>
             </main>
 
