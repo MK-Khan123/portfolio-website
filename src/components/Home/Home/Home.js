@@ -11,15 +11,23 @@ const Home = () => {
     document.title = 'My Portfolio Website';
 
     return (
-        <section id='home'>
-            <Header />
-            <HeaderMain />
-            <ProjectSection />
-            <TechnologySection />
-            <BlogSection />
-            <ContactSection />
-            <Footer />
-        </section>
+        <>
+            <header id='home'>
+                <Header />
+                <HeaderMain />
+            </header>
+
+            <main>
+                <ProjectSection />
+                <TechnologySection />
+                <BlogSection />
+                <ContactSection />
+            </main>
+
+            <footer>
+                <Footer />
+            </footer>
+        </>
     );
 };
 

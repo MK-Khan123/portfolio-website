@@ -19,7 +19,7 @@ const OtherProjects = () => {
         {
             id: 1,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-1_jvukhm.png',
-            projectTitle: 'Technical Documentation Page',
+            projectTitle: 'Technical Doc Page',
             projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
             codeLink: 'https://github.com/MK-Khan123/technical-documentation-page',
             liveSite: 'https://mk-khan123.github.io/technical-documentation-page/index.html'
