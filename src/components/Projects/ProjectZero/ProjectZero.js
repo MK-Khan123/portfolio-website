@@ -37,11 +37,12 @@ const ProjectZero = () => {
                     modules={[Autoplay, Pagination]}
                     className="mySwiper" id='swiper-display'
                 >
-                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-1_tsxu0b.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903912/testo-burger-project/portfolio-slide-image/slide-3_zxoioy.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-2_bbmhbv.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903912/testo-burger-project/portfolio-slide-image/slide-5_wjp9wz.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903912/testo-burger-project/portfolio-slide-image/slide-4_cpysna.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632388/testo-burger-project/portfolio-slide-image/main-banner_jd4nga.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632387/testo-burger-project/portfolio-slide-image/product-details_tvnram.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632388/testo-burger-project/portfolio-slide-image/image-gallery_wimo0n.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632386/testo-burger-project/portfolio-slide-image/login-page_tctuo1.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632388/testo-burger-project/portfolio-slide-image/main-menu_o6ikyo.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632387/testo-burger-project/portfolio-slide-image/cart_ugcrj0.png" alt="..." /></SwiperSlide>
                 </Swiper>
             </Grid>
             <Grid item xs={12}>
@@ -82,19 +83,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    User can opt for a service from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in method using Firebase Authentication.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    The data displayed in our homepage is fetched from MongoDB but for some parts we used static data. We used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                    User can add foods from the homepage (<i><b>Explore Our Menu</b></i> section), <i><b>Our Menu</b></i> tab (at Navbar) and <i><b>All Items</b></i> section under <i><b>Shop</b></i> tab available at Navbar. But he/she needs to login first to proceed to <i><b>Cart</b></i>.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -105,7 +94,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    User can book a service, can pay with card (integrated payment gateway method specifically Stripe Payment). User can view his/her orders (along with status) and provide reviews which is shown on the review section of the homepage dynamically.
+                                    Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in and Github sign in method using Firebase Authentication. User can also register and sign in using their credentials.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -116,7 +105,51 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    Exhausted CRUD operations on multiple occasions while building the website. Implemented Admin/User differentiation. Admin can add/remove/status of different services and changes are reflected immediately on the website. Status updates are immediately reflected on User Panel. An admin is capable of adding another user as an admin.
+                                    The data displayed in the homepage is fetched from MongoDB but for some parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                </Grid>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                            <TimelineSeparator>
+                                <TimelineDot color="error" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Grid className='project-description'>
+                                    Used React Redux for state management of <i><b>Cart</b></i> and handling <i><b>Checkout</b></i> Data. Followed <i><b>Ducks Pattern</b></i> while implementing Redux.
+                                </Grid>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                            <TimelineSeparator>
+                                <TimelineDot color="error" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Grid className='project-description'>
+                                    User can pay with card (integrated payment gateway method specifically Stripe Payment) while ordering.
+                                </Grid>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                            <TimelineSeparator>
+                                <TimelineDot color="error" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Grid className='project-description'>
+                                    Exhausted CRUD operations on multiple occasions while building the website.
+                                </Grid>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                            <TimelineSeparator>
+                                <TimelineDot color="error" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Grid className='project-description'>
+                                    In addition, I used Material UI to make the website device responsive. Furthermore, we deployed the client site on Firebase which can be accessed through the link mentioned below. Server side is deployed using Heroku.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -126,7 +159,14 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    In addition, we used react bootstrap to make the website device responsive. Furthermore, we deployed our site on Firebase which can be accessed through the above mentioned link to experience the website.
+                                    Working on to add these features:
+                                    <ul>
+                                        <li>Sign in using Twitter account.</li>
+                                        <li>User can view his/her orders (along with status).</li>
+                                        <li>Admin/User differentiation.</li>
+                                        <li>Admin will be able to manage Food Items and Placed Orders.</li>
+                                        <li>An admin will be capable of adding another user as an admin.</li>
+                                    </ul>
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -137,7 +177,7 @@ const ProjectZero = () => {
                         Technology
                     </Typography>
                     <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="h5" color="#878E99">
-                        React.js, React Router, Stripe.js, MongoDB, Firebase Authentication, Context API, React Bootstrap, Node.js, Express.js, React Hooks Form, Axios, CRUD operations, Heroku, Font Awesome.
+                        React.js, Material UI, React Router (6.2.1), React Redux, Redux Toolkit, React Stripe JS, MongoDB, Firebase Authentication, Context API, Node.js, Express.js, React Hooks Form, React Swiper JS, Axios, CRUD operations, Heroku, React Reveal, SweetAlert2.
                     </Typography>
                 </Fade>
                 <Fade bottom>

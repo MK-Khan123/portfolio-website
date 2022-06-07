@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom';
 const projectData = [
     {
         id: 1,
-        projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652903913/testo-burger-project/portfolio-slide-image/slide-1_tsxu0b.png',
+        projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1654632388/testo-burger-project/portfolio-slide-image/main-banner_jd4nga.png',
         projectTitle: 'Testo Burger (ongoing)',
         projectDescription: 'A restaurant website where people can order junk food online',
         codeLink: 'https://github.com/MK-Khan123/testo-burger-client',
