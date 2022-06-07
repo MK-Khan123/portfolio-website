@@ -25,7 +25,7 @@ const projectData = [
     },
     {
         id: 2,
-        projectImg: 'https://i.ibb.co/syJZXXR/complete12.png',
+        projectImg: 'https://i.ibb.co/Phj9q74/complete1.png',
         projectTitle: 'City Wheels Auto Shop',
         projectDescription: 'An automotive service oriented website where people can opt for services online',
         codeLink: 'https://github.com/MK-Khan123/complete-website-client',

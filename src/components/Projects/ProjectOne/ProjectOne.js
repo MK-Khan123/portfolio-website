@@ -37,9 +37,12 @@ const ProjectOne = () => {
                     modules={[Autoplay, Pagination]}
                     className="mySwiper" id='swiper-display'
                 >
-                    <SwiperSlide><img src="https://i.ibb.co/syJZXXR/complete12.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://i.ibb.co/wsMPm0y/complete10.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://i.ibb.co/LxSZYjN/complete11.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/Phj9q74/complete1.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/L86qKNq/complete2.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/n1xdDtk/complete3.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/pRLq7ZQ/complete5.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/bdYw2BS/complete4.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/db0qjgH/complete6.png" alt="..." /></SwiperSlide>
                 </Swiper>
             </Grid>
             <Grid item xs={12}>
@@ -92,7 +95,7 @@ const ProjectOne = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    The data displayed in our homepage is fetched from MongoDB but for some parts we used static data. We used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                    The data displayed in the homepage is fetched from MongoDB but for some parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -124,7 +127,7 @@ const ProjectOne = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    In addition, we used react bootstrap to make the website device responsive. Furthermore, we deployed our site on Firebase which can be accessed through the above mentioned link to experience the website.
+                                    In addition, I used React Bootstrap to make the website device responsive. Furthermore, I deployed the site on Firebase which can be accessed through the link mentioned below.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
