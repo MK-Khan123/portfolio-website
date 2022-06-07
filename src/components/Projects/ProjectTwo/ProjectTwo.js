@@ -40,6 +40,9 @@ const ProjectTwo = () => {
                     <SwiperSlide><img src="https://i.ibb.co/XD81z21/fullstack1.png" alt="..." /></SwiperSlide>
                     <SwiperSlide><img src="https://i.ibb.co/Sf2bSR4/fullstack2.png" alt="..." /></SwiperSlide>
                     <SwiperSlide><img src="https://i.ibb.co/98drzWd/fullstack6.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/KwLtcyw/fullstack3.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/xmhMZPH/fullstack4.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/SQTLvgx/fullstack5.png" alt="..." /></SwiperSlide>
                 </Swiper>
             </Grid>
             <Grid item xs={12}>
@@ -102,7 +105,7 @@ const ProjectTwo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    We used create, read, and delete of CRUD operations in this project. Unlike using fakeData, this time data displayed in our homepage is fetched from MongoDB. We slightly used React Authentication along with our previous knowledge of React Routing.
+                                    Used create, read, and delete of CRUD operations in this project. Unlike using fakeData, this time data displaying in the homepage is fetched from MongoDB. I slightly used React Authentication along with my previous knowledge of React Routing.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -113,7 +116,7 @@ const ProjectTwo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    Admin can add/remove products and when products are added/removed, changes are reflected immediately on the homepage. User can view his/her specific order summary by clicking on 'Orders' tab.
+                                    Admin can add/remove products. When products are added/removed, changes are reflected immediately on the homepage. User can view his/her specific order summary by clicking on <i><b>Orders</b></i> tab.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -123,7 +126,7 @@ const ProjectTwo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    In addition, we used plain bootstrap to make the website device responsive. Furthermore, we deployed our site on Firebase which can be accessed through the above mentioned link to experience the website.
+                                    In addition, I used plain bootstrap to make the website device responsive (for mobile and desktop version). Furthermore, I deployed the site on Firebase which can be accessed through the link mentioned below.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>

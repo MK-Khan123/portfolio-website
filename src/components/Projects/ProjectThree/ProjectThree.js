@@ -38,8 +38,10 @@ const ProjectThree = () => {
                     className="mySwiper" id='swiper-display'
                 >
                     <SwiperSlide><img src="https://i.ibb.co/949t1mD/city-transport1.png" alt="..." /></SwiperSlide>
-                    <SwiperSlide><img src="https://i.ibb.co/LC7ppfs/city-transport4.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/RDJW9fH/city-transport4.png" alt="..." /></SwiperSlide>
                     <SwiperSlide><img src="https://i.ibb.co/gSzzxqk/city-transport5.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/dBbc8t0/city-transport3.png" alt="..." /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/YbG5bht/city-transport2.png" alt="..." /></SwiperSlide>
                 </Swiper>
             </Grid>
             <Grid item xs={12}>
@@ -80,7 +82,7 @@ const ProjectThree = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    User can book tickets based on their preferred ride from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google and Facebook sign in method using Firebase Authentication. Users can also create their account (if they don’t have any) and details are stored on Firebase.
+                                    User can book tickets based on their preferred ride from the homepage but he/she needs to login first. Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -91,7 +93,18 @@ const ProjectThree = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    When user signs in, they can select a ride and by providing ride details, they will be able to see the cost (fakeData) and pick & drop location along with a static map. We generated fakeData in JSON format and used route parameter to display data dynamically, prompted through unique interactions.
+                                    Implemented Google and Facebook sign in method using Firebase Authentication. Users can also create their account (if they don’t have any) and details are stored on Firebase.
+                                </Grid>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                            <TimelineSeparator>
+                                <TimelineDot color="error" />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Grid className='project-description'>
+                                    When a user logs in, they can select a ride. By providing ride details, they will be able to see the cost (fakeData) and pick & drop location along with a static map. I generated fakeData in JSON format and used route parameter to display data dynamically, prompted through unique interactions.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -101,7 +114,7 @@ const ProjectThree = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    In addition, we used plain bootstrap to make the website device responsive. Furthermore, we deployed our site on Netlify which can be accessed through the above mentioned link to experience the website.
+                                    In addition, I used plain bootstrap to make the website device responsive (for mobile and desktop version). Furthermore, I deployed the site on Netlify which can be accessed through the link mentioned below.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
