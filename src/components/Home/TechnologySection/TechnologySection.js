@@ -28,7 +28,7 @@ const TechnologySection = () => {
                                 Comfortable
                             </Typography>
                             <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="h5" color="#878E99">
-                                JavaScript, ES6, React.js, HTML5, CSS3, Bootstrap, Material UI, React Router, Firebase Authentication, React Reveal.
+                                JavaScript, ES6, React.js, HTML5, CSS3, Bootstrap, Material UI, React Router, React Redux, Redux Toolkit, Context API, Firebase Authentication, React Hooks Form.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -41,7 +41,7 @@ const TechnologySection = () => {
                                 Familiar
                             </Typography>
                             <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="h5" color="#878E99">
-                                MongoDB, Node.js, CRUD operations, React Hooks, Firebase, Netlify, Heroku, Redux, acquainted with C/C++ programming language.
+                                MongoDB, Node.js, Express JS, React Stripe JS, CRUD operations, Firebase, Axios, Netlify, Heroku, acquainted with C/C++ programming language.
                             </Typography>
                         </CardContent>
                     </CardActionArea>

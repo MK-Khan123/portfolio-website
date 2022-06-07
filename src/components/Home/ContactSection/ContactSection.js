@@ -187,9 +187,8 @@ const ContactSection = () => {
                                     <CssTextField
                                         type='text'
                                         name='name'
-                                        helperText="Enter your full name"
                                         fullWidth
-                                        id="custom-css-outlined-input"
+                                        id="custom-css-outlined-input1"
                                         label="Your Name"
                                         required
                                     />
@@ -198,9 +197,8 @@ const ContactSection = () => {
                                     <CssTextField
                                         type='number'
                                         name='number'
-                                        helperText="Enter your phone number"
                                         fullWidth
-                                        id="custom-css-outlined-input"
+                                        id="custom-css-outlined-input2"
                                         label="Phone Number"
                                     />
                                 </Grid>
@@ -208,10 +206,9 @@ const ContactSection = () => {
                                     <CssTextField
                                         type='email'
                                         name='email'
-                                        helperText="Enter your valid email"
                                         fullWidth
                                         label="Email"
-                                        id="custom-css-outlined-input"
+                                        id="custom-css-outlined-input3"
                                         required
                                     />
                                 </Grid>
@@ -219,10 +216,9 @@ const ContactSection = () => {
                                     <CssTextField
                                         type='text'
                                         name='subject'
-                                        helperText="Enter subject of your email"
                                         fullWidth
                                         label="Subject"
-                                        id="custom-css-outlined-input"
+                                        id="custom-css-outlined-input4"
                                         required
                                     />
                                 </Grid>
@@ -230,9 +226,8 @@ const ContactSection = () => {
                                     <CssTextField
                                         type='text'
                                         name='message'
-                                        helperText="Enter your message"
                                         fullWidth
-                                        id="custom-css-outlined-input"
+                                        id="custom-css-outlined-input5"
                                         label="Your Message"
                                         multiline
                                         minRows={10}
