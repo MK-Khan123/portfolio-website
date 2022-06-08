@@ -83,7 +83,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    User can add foods from the homepage (<i><b>Explore Our Menu</b></i> section), <i><b>Our Menu</b></i> tab (at Navbar) and <i><b>All Items</b></i> section under <i><b>Shop</b></i> tab available at Navbar. But he/she needs to login first to proceed to <i><b>Cart</b></i>.
+                                    User can add foods from the homepage (<span className='code-block'>Explore Our Menu</span> section), <span className='code-block'>Our Menu</span> tab (at Navbar) and <span className='code-block'>All Items</span> section under <span className='code-block'>Shop</span> tab available at Navbar. But he/she needs to login first to proceed to <span className='code-block'>Cart</span> and eventually.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -105,7 +105,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    The data displayed in the homepage is fetched from MongoDB but for most parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                    The data displayed in the homepage (<span className='code-block'>Explore Our Menu</span> & <span className='code-block'>Image Gallery</span> section) is fetched from MongoDB but for most parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
@@ -116,7 +116,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    Used React Redux for state management of <i><b>Cart</b></i> and handling <i><b>Checkout</b></i> Data. Followed <i><b>Ducks Pattern</b></i> while implementing Redux.
+                                    Used React Redux for state management of <span className='code-block'>Cart</span> and handling <span className='code-block'>Checkout</span> Data. Followed <i><b>Ducks Pattern</b></i> while implementing Redux.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>

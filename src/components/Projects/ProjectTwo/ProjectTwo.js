@@ -116,7 +116,7 @@ const ProjectTwo = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    Admin can add/remove products. When products are added/removed, changes are reflected immediately on the homepage. User can view his/her specific order summary by clicking on <i><b>Orders</b></i> tab.
+                                    Admin can add/remove products. When products are added/removed, changes are reflected immediately on the homepage. User can view his/her specific order summary by clicking on <span className='code-block'>Orders</span> tab.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>

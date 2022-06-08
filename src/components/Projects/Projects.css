@@ -37,5 +37,15 @@
 .project-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    font-size: 1.1rem;
     color: #C4CFDE;
+}
+
+.code-block {
+    background-color: #393E46;
+    border-radius: 10px;
+    font-weight: 500;
+    font-style: italic;
+    padding: 5px;
+    color: dodgerblue;
 }
