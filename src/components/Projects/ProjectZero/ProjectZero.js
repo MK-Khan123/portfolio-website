@@ -149,7 +149,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    In addition, I used Material UI to make the website device responsive. Furthermore, we deployed the client site on Firebase which can be accessed through the link mentioned below. Server side is deployed using Heroku.
+                                    In addition, I used Material UI to make the website device responsive. Furthermore, I deployed the client side on Firebase which can be accessed through the link mentioned below. Server side is deployed using Heroku.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
