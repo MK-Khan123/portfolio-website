@@ -105,7 +105,7 @@ const ProjectZero = () => {
                             </TimelineSeparator>
                             <TimelineContent>
                                 <Grid className='project-description'>
-                                    The data displayed in the homepage is fetched from MongoDB but for some parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                    The data displayed in the homepage is fetched from MongoDB but for most parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
