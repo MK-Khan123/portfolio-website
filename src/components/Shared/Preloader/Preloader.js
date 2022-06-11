@@ -5,7 +5,12 @@ export default function Preloader() {
     return (
         <Box
             mt={12}
-            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}
+        >
             <CircularProgress color='secondary' />
         </Box>
     );

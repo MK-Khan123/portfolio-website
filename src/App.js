@@ -11,8 +11,8 @@ const Projects = lazy(() => import("./components/Projects/Projects"));
 
 function App() {
   return (
-    <Box className="App">
-      <Suspense fallback={<Preloader />}>
+    <Suspense fallback={<Preloader />}>
+      <Box className="App">
         <ScrollToTop style={{ borderRadius: '20px', backgroundColor: 'cyan' }} smooth top={200} component={<MySvg />} />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
@@ -21,8 +21,8 @@ function App() {
 
           <Route path='/projects' element={<Projects />} />
         </Routes>
-      </Suspense>
-    </Box>
+      </Box>
+    </Suspense>
   );
 }
 
