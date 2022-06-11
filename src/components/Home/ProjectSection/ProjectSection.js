@@ -13,6 +13,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import { NavLink } from 'react-router-dom';
+import { Fade } from 'react-reveal';
 
 const projectData = [
     {
@@ -44,13 +45,15 @@ const projectData = [
 const ProjectSection = () => {
     return (
         <Container id='projects' sx={{ paddingBottom: 5, borderBottom: '3px solid #970C0C' }}>
-            <Box
-                component='h2'
-                color='#C4CFDE'
-                sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
-            >
-                My Projects
-            </Box>
+            <Fade top>
+                <Box
+                    component='h2'
+                    color='#C4CFDE'
+                    sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
+                >
+                    My Projects
+                </Box>
+            </Fade>
             <Box sx={{ flexGrow: 1 }} component='div'>
                 <Grid container columnSpacing={3} rowSpacing={6} justifyContent='center'>
                     {
@@ -68,50 +71,52 @@ const ProjectSection = () => {
                                     md={4}
                                     sm={12}
                                 >
-                                    <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
-                                        <CardActionArea>
-                                            <CardMedia
-                                                component="img"
-                                                height="250"
-                                                image={projectImg}
-                                                alt="project image"
-                                            />
-                                            <CardContent>
-                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
-                                                    {projectTitle}
-                                                </Typography>
-                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
-                                                    {projectDescription}
-                                                </Typography>
-                                            </CardContent>
-                                        </CardActionArea>
-                                        <CardActions>
-                                            <Link
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                underline='none'
-                                                variant="body2"
-                                                href={codeLink}
-                                            >
-                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning">
-                                                    <GitHubIcon />
-                                                    <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>GitHub</Box>
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                variant="body2"
-                                                underline='none'
-                                                href={liveSite}
-                                            >
-                                                <Button sx={{ alignItems: 'center' }} size="small" color="warning">
-                                                    <LaunchIcon />
-                                                    <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>Live Site</Box>
-                                                </Button>
-                                            </Link>
-                                        </CardActions>
-                                    </Card>
+                                    <Fade bottom>
+                                        <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
+                                            <CardActionArea>
+                                                <CardMedia
+                                                    component="img"
+                                                    height="250"
+                                                    image={projectImg}
+                                                    alt="project image"
+                                                />
+                                                <CardContent>
+                                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
+                                                        {projectTitle}
+                                                    </Typography>
+                                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
+                                                        {projectDescription}
+                                                    </Typography>
+                                                </CardContent>
+                                            </CardActionArea>
+                                            <CardActions>
+                                                <Link
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    underline='none'
+                                                    variant="body2"
+                                                    href={codeLink}
+                                                >
+                                                    <Button sx={{ alignItems: 'center' }} size="small" color="warning">
+                                                        <GitHubIcon />
+                                                        <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>GitHub</Box>
+                                                    </Button>
+                                                </Link>
+                                                <Link
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    variant="body2"
+                                                    underline='none'
+                                                    href={liveSite}
+                                                >
+                                                    <Button sx={{ alignItems: 'center' }} size="small" color="warning">
+                                                        <LaunchIcon />
+                                                        <Box sx={{ pl: 1, fontFamily: 'Poppins, sans-serif' }} component='p'>Live Site</Box>
+                                                    </Button>
+                                                </Link>
+                                            </CardActions>
+                                        </Card>
+                                    </Fade>
                                 </Grid>
                             );
                         })

@@ -4,8 +4,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Container, Grid, Link } from '@mui/material';
-import { Box } from '@mui/material';
+import { Box, Button, CardActionArea, CardActions, Container, Grid, Link } from '@mui/material';
+import { Fade } from 'react-reveal';
 import blogPic1 from '../../../images/javaScript.png';
 import blogPic2 from '../../../images/front-end-developer.jpg';
 import blogPic3 from '../../../images/developer.png';
@@ -37,13 +37,15 @@ const blogData = [
 const BlogSection = () => {
     return (
         <Container id='blogs' sx={{ paddingBottom: 8, borderBottom: '3px solid #970C0C' }}>
-            <Box
-                component='h2'
-                color='#C4CFDE'
-                sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
-            >
-                My Blogs
-            </Box>
+            <Fade top>
+                <Box
+                    component='h2'
+                    color='#C4CFDE'
+                    sx={{ fontSize: '4rem', textAlign: 'center', fontFamily: 'Varela Round, sans-serif' }}
+                >
+                    My Blogs
+                </Box>
+            </Fade>
             <Box sx={{ flexGrow: 1 }} component='div'>
                 <Grid container spacing={3} justifyContent='center'>
                     {
@@ -57,38 +59,40 @@ const BlogSection = () => {
                                         alignItems: 'center'
                                     }}
                                     item md={4} sm={12}>
-                                    <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
-                                        <CardActionArea>
-                                            <CardMedia
-                                                component="img"
-                                                height="250"
-                                                image={blogImage}
-                                                alt="blog image"
-                                            />
-                                            <CardContent>
-                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
-                                                    {blogTitle}
-                                                </Typography>
-                                                <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
-                                                    {blogDescription}
-                                                </Typography>
-                                            </CardContent>
-                                        </CardActionArea>
-                                        <CardActions>
-                                            <Link
-                                                sx={{ textDecoration: 'none' }}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                variant="body2"
-                                                href={blogLink}
-                                            >
-                                               <Button sx={{ alignItems: 'center' }} size="small" color="warning"> {/**Eita change korsi */}
-                                                    <LaunchIcon />
-                                                    <Box sx={{ pl: 1 }} component='p'>Read More</Box>
-                                                </Button>
-                                            </Link>
-                                        </CardActions>
-                                    </Card>
+                                    <Fade bottom>
+                                        <Card sx={{ maxWidth: 410, boxShadow: 6, borderRadius: 2, backgroundColor: '#212428' }}>
+                                            <CardActionArea>
+                                                <CardMedia
+                                                    component="img"
+                                                    height="250"
+                                                    image={blogImage}
+                                                    alt="blog image"
+                                                />
+                                                <CardContent>
+                                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} gutterBottom variant="h5" component="div" color="#E4E6EA">
+                                                        {blogTitle}
+                                                    </Typography>
+                                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif' }} variant="body2" color="#E4E6EA">
+                                                        {blogDescription}
+                                                    </Typography>
+                                                </CardContent>
+                                            </CardActionArea>
+                                            <CardActions>
+                                                <Link
+                                                    sx={{ textDecoration: 'none' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    variant="body2"
+                                                    href={blogLink}
+                                                >
+                                                    <Button sx={{ alignItems: 'center' }} size="small" color="warning">
+                                                        <LaunchIcon />
+                                                        <Box sx={{ pl: 1 }} component='p'>Read More</Box>
+                                                    </Button>
+                                                </Link>
+                                            </CardActions>
+                                        </Card>
+                                    </Fade>
                                 </Grid>
                             );
                         })

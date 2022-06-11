@@ -8,6 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, Grid, Link } from '@mui/material';
 import { Typewriter } from 'react-simple-typewriter';
 import myPic from '../../../images/myPic.png';
+import { Fade } from 'react-reveal';
 
 const backgroundPicture = {
     backgroundImage: `url(${background})`,
@@ -24,46 +25,52 @@ const HeaderMain = () => {
             <Box sx={{ color: 'white' }} style={backgroundPicture}>
                 <Grid container spacing={2}>
                     <Grid item xs={0} md={4}>
-                        <Box sx={{ textAlign: 'center' }}>
-                            <Avatar
-                                sx={{
-                                    width: '45.55%',
-                                    height: '27.12%',
-                                    filter: 'grayScale(50%)',
-                                    border: '10px solid #444444',
-                                    display: { xs: 'none', md: 'inline-block' },
-                                    margin: '9.375rem'
-                                }}
-                                alt="Mehnaz Ahmed"
-                                src={myPic}
-                            />
-                        </Box>
+                        <Fade left>
+                            <Box sx={{ textAlign: 'center' }}>
+                                <Avatar
+                                    sx={{
+                                        width: '45.55%',
+                                        height: '27.12%',
+                                        filter: 'grayScale(30%)',
+                                        border: '6px solid #444444',
+                                        display: { xs: 'none', md: 'inline-block' },
+                                        margin: '9.375rem'
+                                    }}
+                                    alt="Mehnaz Ahmed"
+                                    src={myPic}
+                                />
+                            </Box>
+                        </Fade>
                     </Grid>
 
                     <Grid sx={{ textAlign: 'center' }} item xs={12} md={8}>
-                        <Box
-                            sx={{
-                                marginTop: '150px',
-                                fontSize: '3.5rem',
-                                fontWeight: 'bold',
-                                marginBottom: '0.5rem',
-                                fontFamily: 'Varela Round, sans-serif'
-                            }}
-                            component='h1'
-                        >
-                            Hi, I'm <Box component='span' color='#00FFFF'>Mehnaz Ahmed Khan</Box>
-                        </Box>
-                        <Box sx={{ color: 'lightgrey', fontSize: '3rem', marginY: '0.5rem', fontFamily: 'Varela Round, sans-serif' }} component='p' >
-                            a <Typewriter
-                                words={['Frontend Developer', 'Programmer', 'Technology Enthusiast']}
-                                loop={0}
-                                cursor
-                                cursorStyle='_'
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                            />
-                        </Box>
+                        <Fade top>
+                            <Box
+                                sx={{
+                                    marginTop: '150px',
+                                    fontSize: '3.5rem',
+                                    fontWeight: 'bold',
+                                    marginBottom: '0.5rem',
+                                    fontFamily: 'Varela Round, sans-serif'
+                                }}
+                                component='h1'
+                            >
+                                Hi, I'm <Box component='span' color='#00FFFF'>Mehnaz Ahmed Khan</Box>
+                            </Box>
+                        </Fade>
+                        <Fade right>
+                            <Box sx={{ color: 'lightgrey', fontSize: '3rem', marginY: '0.5rem', fontFamily: 'Varela Round, sans-serif' }} component='p' >
+                                a <Typewriter
+                                    words={['Frontend Developer', 'Programmer', 'Technology Enthusiast']}
+                                    loop={0}
+                                    cursor
+                                    cursorStyle='_'
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
+                                />
+                            </Box>
+                        </Fade>
                         <Box pt={3}>
                             <Link px={3} href="https://www.facebook.com/mehnaz.ahmed.5030/" target="_blank" rel="noopener noreferrer">
                                 <FacebookRoundedIcon sx={{ fontSize: 50, color: '#3b5998' }} />
