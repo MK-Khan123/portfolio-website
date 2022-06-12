@@ -76,100 +76,115 @@ const ProjectZero = () => {
                 </Fade>
                 <Fade right>
                     <Timeline>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    User can add foods from the homepage (<span className='code-block'>Explore Our Menu</span> section), <span className='code-block'>Our Menu</span> tab (at Navbar) and <span className='code-block'>All Items</span> section under <span className='code-block'>Shop</span> tab available at Navbar. But he/she needs to login first to proceed to <span className='code-block'>Cart</span> and eventually.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in and Github sign in method using Firebase Authentication. User can also register and sign in using their credentials.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    The data displayed in the homepage (<span className='code-block'>Explore Our Menu</span> & <span className='code-block'>Image Gallery</span> section) is fetched from MongoDB but for most parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    Used React Redux for state management of <span className='code-block'>Cart</span> and handling <span className='code-block'>Checkout</span> Data. Followed <i><b>Ducks Pattern</b></i> while implementing Redux.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    User can pay with card (integrated payment gateway method specifically Stripe Payment) while ordering.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    Exhausted CRUD operations on multiple occasions while building the website.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    In addition, I used Material UI to make the website device responsive. Furthermore, I deployed the client side on Firebase which can be accessed through the link mentioned below. Server side is deployed using Heroku.
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem sx={{ '::before': { content: 'none' } }}>
-                            <TimelineSeparator>
-                                <TimelineDot color="error" />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Grid className='project-description'>
-                                    Working on to add these features:
-                                    <ul>
-                                        <li>Sign in using Twitter account.</li>
-                                        <li>User can view his/her orders (along with status).</li>
-                                        <li>Admin/User differentiation.</li>
-                                        <li>Admin will be able to manage Food Items and Placed Orders.</li>
-                                        <li>An admin will be capable of adding another user as an admin.</li>
-                                    </ul>
-                                </Grid>
-                            </TimelineContent>
-                        </TimelineItem>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        User can add foods from the homepage (<span className='code-block'>Explore Our Menu</span> section), <span className='code-block'>Our Menu</span> tab (at Navbar) and <span className='code-block'>All Items</span> section under <span className='code-block'>Shop</span> tab available at Navbar. But he/she needs to login first to proceed to <span className='code-block'>Cart</span> and eventually.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in and Github sign in method using Firebase Authentication. User can also register and sign in using their credentials.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        The data displayed in the homepage (<span className='code-block'>Explore Our Menu</span> & <span className='code-block'>Image Gallery</span> section) is fetched from MongoDB but for most parts I used static data. Used route parameter to fetch data dynamically from MongoDB and displayed accordingly.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        Used React Redux for state management of <span className='code-block'>Cart</span> and handling <span className='code-block'>Checkout</span> Data. Followed <i><b>Ducks Pattern</b></i> while implementing Redux.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        User can pay with card (integrated payment gateway method specifically Stripe Payment) while ordering.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        Exhausted CRUD operations on multiple occasions while building the website.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        In addition, I used Material UI to make the website device responsive. Furthermore, I deployed the client side on Firebase which can be accessed through the link mentioned below. Server side is deployed using Heroku.
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
+                        <Fade right>
+                            <TimelineItem sx={{ '::before': { content: 'none' } }}>
+                                <TimelineSeparator>
+                                    <TimelineDot color="error" />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <Grid className='project-description'>
+                                        Working on to add these features:
+                                        <ul>
+                                            <li>User can view his/her orders (along with status).</li>
+                                            <li>Admin/User differentiation.</li>
+                                            <li>Admin will be able to manage Food Items and Placed Orders.</li>
+                                            <li>An admin will be capable of adding another user as an admin.</li>
+                                        </ul>
+                                    </Grid>
+                                </TimelineContent>
+                            </TimelineItem>
+                        </Fade>
                     </Timeline>
                 </Fade>
                 <Fade left>

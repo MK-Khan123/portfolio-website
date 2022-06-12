@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
+import { Fade } from 'react-reveal';
 import bannerImage from '../../images/project-background.jpg';
 import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
@@ -29,7 +30,9 @@ const Projects = () => {
                     justifyContent: 'center',
                     alignItems: 'center'
                 }}>
-                    <Box sx={{ fontSize: '4rem', color: 'white' }} component='h5'>PROJECTS</Box>
+                    <Fade top>
+                        <Box sx={{ fontSize: '4rem', color: 'white' }} component='h5'>PROJECTS</Box>
+                    </Fade>
                 </Box>
 
                 <Container>

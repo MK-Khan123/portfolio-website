@@ -123,9 +123,22 @@ const ProjectSection = () => {
                     }
                     <Grid item xs={12}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button sx={{ width: '10rem', height: '3rem' }} variant='contained' color='error'>
-                                <NavLink to='/projects' style={{ textDecoration: 'none', fontFamily: 'Poppins, sans-serif', color: '#E4E6EA', fontSize: '1.1rem' }}>View More</NavLink>
-                            </Button>
+                            <NavLink
+                                to='/projects' style={{ textDecoration: 'none' }}>
+                                <Button
+                                    variant='contained'
+                                    color='error'
+                                    sx={{
+                                        width: '10rem',
+                                        height: '3rem',
+                                        fontSize: '1.1rem',
+                                        fontFamily: 'Poppins, sans-serif',
+                                        color: '#E4E6EA'
+                                    }}
+                                >
+                                    View More
+                                </Button>
+                            </NavLink>
                         </Box>
                     </Grid>
                 </Grid>

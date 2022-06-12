@@ -74,8 +74,8 @@ const ProjectTwo = () => {
                         A grocery shop website (MERN Stack)
                     </Typography>
                 </Fade>
-                <Fade right>
-                    <Timeline>
+                <Timeline>
+                    <Fade right>
                         <TimelineItem sx={{ '::before': { content: 'none' } }}>
                             <TimelineSeparator>
                                 <TimelineDot color="error" />
@@ -87,6 +87,8 @@ const ProjectTwo = () => {
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
+                    </Fade>
+                    <Fade right>
                         <TimelineItem sx={{ '::before': { content: 'none' } }}>
                             <TimelineSeparator>
                                 <TimelineDot color="error" />
@@ -98,6 +100,8 @@ const ProjectTwo = () => {
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
+                    </Fade>
+                    <Fade right>
                         <TimelineItem sx={{ '::before': { content: 'none' } }}>
                             <TimelineSeparator>
                                 <TimelineDot color="error" />
@@ -109,6 +113,8 @@ const ProjectTwo = () => {
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
+                    </Fade>
+                    <Fade right>
                         <TimelineItem sx={{ '::before': { content: 'none' } }}>
                             <TimelineSeparator>
                                 <TimelineDot color="error" />
@@ -120,6 +126,8 @@ const ProjectTwo = () => {
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
+                    </Fade>
+                    <Fade right>
                         <TimelineItem sx={{ '::before': { content: 'none' } }}>
                             <TimelineSeparator>
                                 <TimelineDot color="error" />
@@ -130,8 +138,8 @@ const ProjectTwo = () => {
                                 </Grid>
                             </TimelineContent>
                         </TimelineItem>
-                    </Timeline>
-                </Fade>
+                    </Fade>
+                </Timeline>
                 <Fade left>
                     <Typography sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 'bold', color: "#C4CFDE" }} gutterBottom variant="h5" component="div">
                         Technology
