@@ -21,7 +21,7 @@ const OtherProjects = () => {
             id: 1,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-1_jvukhm.png',
             projectTitle: 'Technical Doc Page',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3, Media Queries',
             codeLink: 'https://github.com/MK-Khan123/technical-documentation-page',
             liveSite: 'https://mk-khan123.github.io/technical-documentation-page/index.html'
         },
@@ -29,7 +29,7 @@ const OtherProjects = () => {
             id: 2,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-2_vfwgfb.png',
             projectTitle: 'Product Landing Page',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3, Media Queries',
             codeLink: 'https://github.com/MK-Khan123/product-landing-page',
             liveSite: 'https://mk-khan123.github.io/product-landing-page/index.html'
         },
@@ -37,7 +37,7 @@ const OtherProjects = () => {
             id: 3,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-3_kefsln.png',
             projectTitle: 'A Survey Form',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3',
             codeLink: 'https://github.com/MK-Khan123/surveyForm',
             liveSite: 'https://mk-khan123.github.io/surveyForm/index.html'
         },
@@ -45,7 +45,7 @@ const OtherProjects = () => {
             id: 4,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-4_uqxpvq.png',
             projectTitle: 'A Tribute Page',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3',
             codeLink: 'https://github.com/MK-Khan123/tributePage',
             liveSite: 'https://mk-khan123.github.io/tributePage/index.html'
         },
@@ -53,7 +53,7 @@ const OtherProjects = () => {
             id: 5,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956006/other-projects-portfolio-website/project-5_al1rog.png',
             projectTitle: 'Personal Portfolio Dummy',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3, Media Queries',
             codeLink: 'https://github.com/MK-Khan123/personal-portfolio',
             liveSite: 'https://mk-khan123.github.io/personal-portfolio/index.html'
         },
@@ -61,7 +61,7 @@ const OtherProjects = () => {
             id: 6,
             projectImg: 'https://res.cloudinary.com/dn9k2jkdd/image/upload/v1652956007/other-projects-portfolio-website/project-6_ezgbzr.png',
             projectTitle: 'Responsive Landing Page',
-            projectDescription: 'Lorem ipsum dimsum lipsum cumsum',
+            projectDescription: 'HTML5, CSS3, Bootstrap',
             codeLink: 'https://github.com/MK-Khan123/responsive_landing_page',
             liveSite: 'https://mk-khan123.github.io/responsive_landing_page/'
         }

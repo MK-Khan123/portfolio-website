@@ -97,7 +97,7 @@ const ProjectZero = () => {
                                 </TimelineSeparator>
                                 <TimelineContent>
                                     <Grid className='project-description'>
-                                        Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google sign in and Github sign in method using Firebase Authentication. User can also register and sign in using their credentials.
+                                        Applied Private Route (also known as Protected Route/ Authenticated Route) to restrict convenient access. Implemented Google/Twitter/GitHub sign in method using Firebase Authentication. User can also register and sign in using their credentials.
                                     </Grid>
                                 </TimelineContent>
                             </TimelineItem>
