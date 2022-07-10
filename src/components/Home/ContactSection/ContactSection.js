@@ -161,7 +161,7 @@ const ContactSection = () => {
                                             }
                                         ]
                                     }
-                                    href="https://www.linkedin.com/in/mehnaz-ahmed-khan31/"
+                                    href="https://www.linkedin.com/in/mehnaz-ahmed-khan/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
